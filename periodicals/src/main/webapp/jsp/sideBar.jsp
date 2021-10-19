@@ -29,7 +29,7 @@
 			<h3 class="w3-bar-item">Menu</h3>
 			<a href="/home" class="w3-bar-item w3-button">Home</a> <a
 				href="/create-periodical" class="w3-bar-item w3-button">Create
-				periodical</a> <a href="#" class="w3-bar-item w3-button">Bucket</a>
+				periodical</a> <a href="/buckets" class="w3-bar-item w3-button">Bucket</a>
 		</div>
 
 		<div style="margin-left: 10%; hight: 50px">

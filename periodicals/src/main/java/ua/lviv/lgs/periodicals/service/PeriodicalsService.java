@@ -22,4 +22,8 @@ public class PeriodicalsService {
 		return periodicalRepository.findAll();
 	}
 
+	public Periodical findById(Integer id) {		
+		return periodicalRepository.findById(id).get();
+	}
+
 }
