@@ -3,14 +3,15 @@
 <%@ taglib prefix="form" uri="http://www.springframework.org/tags/form"%>
 
 <%@ page language="java" contentType="text/html; charset=ISO-8859-1"
-    pageEncoding="ISO-8859-1"%>
+	pageEncoding="ISO-8859-1"%>
 <!DOCTYPE html>
 <html>
 <head>
 <meta charset="ISO-8859-1">
 <title>Periodicals</title>
-	<link href="${contextPath}/resources/css/bootstrap.min.css" 	rel="stylesheet">
-	<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link href="${contextPath}/resources/css/bootstrap.min.css"
+	rel="stylesheet">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
 </head>
 <body>
 
@@ -19,9 +20,9 @@
 		<!-- Sidebar -->
 		<div class="w3-sidebar w3-light-grey w3-bar-block" style="width: 10%">
 			<h3 class="w3-bar-item">Menu</h3>
-			<a href="/home" class="w3-bar-item w3-button">Home</a>
-			<a href="/create-periodical" class="w3-bar-item w3-button">Create periodical</a>				 
-			<a href="#"  class="w3-bar-item w3-button">Bucket</a>
+			<a href="/home" class="w3-bar-item w3-button">Home</a> <a
+				href="/create-periodical" class="w3-bar-item w3-button">Create
+				periodical</a> <a href="#" class="w3-bar-item w3-button">Bucket</a>
 		</div>
 
 		<!-- Page Content -->
@@ -32,7 +33,7 @@
 			</div>
 
 			<div class="w3-container">
-				
+
 				<c:if test="${pageContext.request.userPrincipal.name != null}">
 					<form id="logoutForm" method="POST" action="${contextPath}/logout">
 						<input type="hidden" name="${_csrf.parameterName}"
@@ -45,20 +46,25 @@
 					</h2>
 
 				</c:if>
-				
-				<form:form method="POST" action="${contextPath}/addPeriodical" modelAttribute="periodical">
+
+				<form:form method="POST" action="${contextPath}/addPeriodical"
+					 enctype="multipart/form-data">
 					<table>
 						<tr>
-							<td><form:label path="name">Name</form:label></td>
-							<td><form:input path="name" /></td>
+							<td>Name</td>
+							<td><input type="text" name="name" /></td>
 						</tr>
 						<tr>
-							<td><form:label path="description">Description</form:label></td>
-							<td><form:input path="description" /></td>
+							<td>Description</td>
+							<td><input type="text" name="description" /></td>
 						</tr>
 						<tr>
-							<td><form:label path="price">Price</form:label></td>
-							<td><form:input path="price" /></td>
+							<td>Price</td>
+							<td><input type="number" name="price"  step="0.01" /></td>
+						</tr>
+						<tr>
+							<td>Select an image to upload</td>
+							<td><input type="file" name="image" /></td>
 						</tr>
 						<tr>
 							<td><input type="submit" value="Submit" /></td>
@@ -68,8 +74,8 @@
 						value="${_csrf.token}" />
 				</form:form>
 
-					
-					
+
+
 			</div>
 
 		</div>
@@ -77,7 +83,8 @@
 
 	</div>
 
-	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+	<script
+		src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
 	<script src="${contextPath}/resources/js/bootstrap.min.js"></script>
 </body>
 </html>

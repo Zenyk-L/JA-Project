@@ -33,13 +33,13 @@
 		</div>
 
 		<!-- Page Content -->
-		<div style="margin-left: 10%">
+		<div style="margin-left: 10%" >
 
 			<div class="w3-container w3-teal">
 				<h1>Periodicals</h1>
 			</div>
 
-			<div class="w3-container">
+			<div class="w3-container" >
 
 				<c:if test="${pageContext.request.userPrincipal.name != null}">
 					<form id="logoutForm" method="POST" action="${contextPath}/logout">
@@ -52,14 +52,14 @@
 							onclick="document.forms['logoutForm'].submit()">Logout</a>
 					</h2>
 				</c:if>
-
-				<c:if test="${not empty periodicals}">
+			<div style="display: flex; flex-wrap: wrap">
+				<c:if test="${not empty periodicals}" >
 					<c:forEach items="${periodicals}" var="currentPeriodical">
 
 						<div class="w3-card-4" style="width: 20%; margin:2%" >
 							<img
-								src="https://kaverisias.com/wp-content/uploads/2018/01/catalog-default-img.gif"
-								alt="Alps" style="width: 100%">
+								src="data:image/jpg;base64, ${currentPeriodical.encodedImage}"
+								alt="File not found" style="width: 100%">
 							<div class="w3-container w3-center">
 								<h3>${currentPeriodical.name}</h3>
 								<p>${currentPeriodical.description}</p>
@@ -72,6 +72,7 @@
 
 					</c:forEach>
 				</c:if>
+			</div>
 
 
 
