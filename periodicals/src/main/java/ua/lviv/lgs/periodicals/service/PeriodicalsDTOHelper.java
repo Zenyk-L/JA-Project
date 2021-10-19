@@ -3,7 +3,6 @@ package ua.lviv.lgs.periodicals.service;
 import java.io.IOException;
 import java.util.Base64;
 
-import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.multipart.MultipartFile;
 
 import ua.lviv.lgs.periodicals.domain.Periodical;

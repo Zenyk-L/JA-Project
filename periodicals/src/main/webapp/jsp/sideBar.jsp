@@ -25,47 +25,42 @@
 	<div class="container">
 
 		<!-- Sidebar -->
-		<jsp:include page="sideBar.jsp"></jsp:include>
-
-		<!-- Page Content -->
-		<div class="w3-container w3-teal" style="margin-left: 10%">
-			<h1>Periodicals</h1>
+		<div class="w3-sidebar w3-light-grey w3-bar-block" style="width: 10%">
+			<h3 class="w3-bar-item">Menu</h3>
+			<a href="/home" class="w3-bar-item w3-button">Home</a> <a
+				href="/create-periodical" class="w3-bar-item w3-button">Create
+				periodical</a> <a href="#" class="w3-bar-item w3-button">Bucket</a>
 		</div>
-		
-		<div style="margin-left: 10%; display: flex; flex-wrap: wrap">
+
+		<div style="margin-left: 10%; hight: 50px">
+
+			<div class="w3-container w3-teal">
+
+
+
 			
 
+					<c:if test="${pageContext.request.userPrincipal.name != null}">
+						<form id="logoutForm" method="POST" action="${contextPath}/logout">
+							<input type="hidden" name="${_csrf.parameterName}"
+								value="${_csrf.token}" />
+						</form>
 
-			<!-- 	<div style=""> -->
-			<c:if test="${not empty periodicals}">
-				<c:forEach items="${periodicals}" var="currentPeriodical">
+						<h2>
 
-					<div class="w3-card-4" style="width: 20%; margin: 2%">
-						<img
-							src="data:image/jpg;base64, ${currentPeriodical.encodedImage}"
-							alt="File not found" style="width: 100%">
-						<div class="w3-container w3-center">
-							<h3>${currentPeriodical.name}</h3>
-							<p>${currentPeriodical.description}</p>
-							<p>${currentPeriodical.price}</p>
-						</div>
-						<button class="w3-button w3-block w3-dark-grey">+ add to
-							bucket</button>
-					</div>
+							Welcome ${pageContext.request.userPrincipal.name} | <a
+								onclick="document.forms['logoutForm'].submit()">Logout</a>
+						</h2>
+					</c:if>
+				
 
 
-				</c:forEach>
-			</c:if>
+			</div>
+
 		</div>
-
 
 
 	</div>
-
-	<!-- </div> -->
-
-
-
 
 	<script
 		src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>

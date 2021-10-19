@@ -18,37 +18,19 @@
 	<div class="container">
 
 		<!-- Sidebar -->
-		<div class="w3-sidebar w3-light-grey w3-bar-block" style="width: 10%">
-			<h3 class="w3-bar-item">Menu</h3>
-			<a href="/home" class="w3-bar-item w3-button">Home</a> <a
-				href="/create-periodical" class="w3-bar-item w3-button">Create
-				periodical</a> <a href="#" class="w3-bar-item w3-button">Bucket</a>
-		</div>
+		<jsp:include page="sideBar.jsp"></jsp:include>
 
 		<!-- Page Content -->
+		<div class="w3-container w3-teal" style="margin-left: 10%">
+			<h1>Create new periodical</h1>
+		</div>
 		<div style="margin-left: 10%">
-
-			<div class="w3-container w3-teal">
-				<h1>Create new periodical</h1>
-			</div>
 
 			<div class="w3-container">
 
-				<c:if test="${pageContext.request.userPrincipal.name != null}">
-					<form id="logoutForm" method="POST" action="${contextPath}/logout">
-						<input type="hidden" name="${_csrf.parameterName}"
-							value="${_csrf.token}" />
-					</form>
-
-					<h2>
-						Welcome ${pageContext.request.userPrincipal.name} | <a
-							onclick="document.forms['logoutForm'].submit()">Logout</a>
-					</h2>
-
-				</c:if>
 
 				<form:form method="POST" action="${contextPath}/addPeriodical"
-					 enctype="multipart/form-data">
+					enctype="multipart/form-data">
 					<table>
 						<tr>
 							<td>Name</td>
@@ -60,7 +42,7 @@
 						</tr>
 						<tr>
 							<td>Price</td>
-							<td><input type="number" name="price"  step="0.01" /></td>
+							<td><input type="number" name="price" step="0.01" /></td>
 						</tr>
 						<tr>
 							<td>Select an image to upload</td>
