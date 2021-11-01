@@ -9,7 +9,6 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.servlet.ModelAndView;
 
-import ua.lviv.lgs.periodicals.domain.Periodical;
 import ua.lviv.lgs.periodicals.domain.User;
 import ua.lviv.lgs.periodicals.service.PeriodicalsService;
 import ua.lviv.lgs.periodicals.service.UserService;

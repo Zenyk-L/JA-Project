@@ -30,7 +30,7 @@
 
 			<div class="form-group ${error != null ? 'has-error' : ''}">
 				<span>${message}</span> <input name="email" type="text"
-					class="form-control" placeholder="Email" autofocus="true" value="user@gmail.com"/> <input
+					class="form-control" placeholder="Email" autofocus value="user@gmail.com"/> <input
 					name="password" type="password" class="form-control"
 					placeholder="Password" value="user" /> <span>${error}</span> <input
 					type="hidden" name="${_csrf.parameterName}" value="${_csrf.token}" />
