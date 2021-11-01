@@ -1,6 +1,8 @@
 <%@ taglib prefix="spring" uri="http://www.springframework.org/tags"%>
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core"%>
 <%@ taglib prefix="form" uri="http://www.springframework.org/tags/form"%>
+<%@ taglib prefix="security"  uri="http://www.springframework.org/security/tags"%>
+
 
 <c:set var="contextPath" value="${pageContext.request.contextPath}" />
 
@@ -48,13 +50,18 @@
 							<p>${currentPeriodical.price}</p>
 						</div>
 
-					   <form:form action="${contextPath}/bucket" method="POST" enctype="multipart/form-data">
-						
-							<input type="hidden"  class="form-control" name="periodicalId" 	value="${currentPeriodical.id}">
-							<input type="submit" class="w3-button w3-block w3-dark-grey" 	value="+ add to bucket">
-							
-					   </form:form> 
-						
+						<security:authorize access="hasRole('ROLE_USER')">
+							<form:form action="${contextPath}/bucket" method="POST"
+								enctype="multipart/form-data">
+
+								<input type="hidden" class="form-control" name="periodicalId"
+									value="${currentPeriodical.id}">
+								<input type="submit" class="w3-button w3-block w3-dark-grey"
+									value="+ add to bucket">
+
+							</form:form>
+						</security:authorize>
+
 
 					</div>
 
