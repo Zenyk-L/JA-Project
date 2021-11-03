@@ -578,3 +578,1381 @@
 2021-11-03 11:46:49 [main]  INFO u.l.l.p.service.PeriodicalsService - Create periodical item {}:Periodical [id=null, name=1, description=1, price=10.0]
 2021-11-03 11:46:49 [main]  INFO o.s.t.c.t.TransactionContext - Rolled back transaction for test: [DefaultTestContext@6a55299e testClass = PeriodicalsApplicationTests, testInstance = ua.lviv.lgs.periodicals.PeriodicalsApplicationTests@e2498a3, testMethod = testSavePeriodical@PeriodicalsApplicationTests, testException = [null], mergedContextConfiguration = [MergedContextConfiguration@2f1de2d6 testClass = PeriodicalsApplicationTests, locations = '{}', classes = '{class ua.lviv.lgs.periodicals.PeriodicalsApplication}', contextInitializerClasses = '[]', activeProfiles = '{}', propertySourceLocations = '{}', propertySourceProperties = '{org.springframework.boot.test.autoconfigure.orm.jpa.DataJpaTestContextBootstrapper=true}', contextCustomizers = set[[ImportsContextCustomizer@4eb386df key = [org.springframework.boot.autoconfigure.cache.CacheAutoConfiguration, org.springframework.boot.autoconfigure.data.jpa.JpaRepositoriesAutoConfiguration, org.springframework.boot.autoconfigure.flyway.FlywayAutoConfiguration, org.springframework.boot.autoconfigure.jdbc.DataSourceAutoConfiguration, org.springframework.boot.autoconfigure.jdbc.DataSourceTransactionManagerAutoConfiguration, org.springframework.boot.autoconfigure.jdbc.JdbcTemplateAutoConfiguration, org.springframework.boot.autoconfigure.liquibase.LiquibaseAutoConfiguration, org.springframework.boot.autoconfigure.orm.jpa.HibernateJpaAutoConfiguration, org.springframework.boot.autoconfigure.sql.init.SqlInitializationAutoConfiguration, org.springframework.boot.autoconfigure.transaction.TransactionAutoConfiguration, org.springframework.boot.test.autoconfigure.jdbc.TestDatabaseAutoConfiguration, org.springframework.boot.test.autoconfigure.orm.jpa.TestEntityManagerAutoConfiguration]], org.springframework.boot.test.context.filter.ExcludeFilterContextCustomizer@29a5f4e7, org.springframework.boot.test.json.DuplicateJsonObjectContextCustomizerFactory$DuplicateJsonObjectContextCustomizer@42a15bdc, org.springframework.boot.test.mock.mockito.MockitoContextCustomizer@0, org.springframework.boot.test.autoconfigure.OverrideAutoConfigurationContextCustomizerFactory$DisableAutoConfigurationContextCustomizer@78a773fd, org.springframework.boot.test.autoconfigure.actuate.metrics.MetricsExportContextCustomizerFactory$DisableMetricExportContextCustomizer@135606db, org.springframework.boot.test.autoconfigure.filter.TypeExcludeFiltersContextCustomizer@351584c0, org.springframework.boot.test.autoconfigure.properties.PropertyMappingContextCustomizer@faaac210, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverContextCustomizerFactory$Customizer@2812b107, org.springframework.boot.test.context.SpringBootTestArgs@1, org.springframework.boot.test.context.SpringBootTestWebEnvironment@0], contextLoader = 'org.springframework.boot.test.context.SpringBootContextLoader', parent = [null]], attributes = map['org.springframework.test.context.event.ApplicationEventsTestExecutionListener.recordApplicationEvents' -> false]]
 2021-11-03 11:46:49 [SpringApplicationShutdownHook]  INFO o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+2021-11-03 12:23:37 [main]  INFO u.l.l.p.PeriodicalsApplication - Starting PeriodicalsApplication using Java 15.0.1 on DESKTOP-EC73OSQ with PID 5292 (D:\Zenyk\Java\eclipse-workspace\JA-Project\periodicals\target\classes started by livch in D:\Zenyk\Java\eclipse-workspace\JA-Project\periodicals)
+2021-11-03 12:23:37 [main] DEBUG u.l.l.p.PeriodicalsApplication - Running with Spring Boot v2.5.4, Spring v5.3.9
+2021-11-03 12:23:37 [main]  INFO u.l.l.p.PeriodicalsApplication - No active profile set, falling back to default profiles: default
+2021-11-03 12:23:39 [main]  INFO o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2021-11-03 12:23:39 [main]  INFO o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 110 ms. Found 3 JPA repository interfaces.
+2021-11-03 12:23:41 [main]  INFO o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8080 (http)
+2021-11-03 12:23:41 [main]  INFO o.a.catalina.core.StandardService - Starting service [Tomcat]
+2021-11-03 12:23:41 [main]  INFO o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.52]
+2021-11-03 12:23:41 [main]  INFO org.apache.jasper.servlet.TldScanner - At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+2021-11-03 12:23:41 [main]  INFO o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2021-11-03 12:23:41 [main]  INFO o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 4079 ms
+2021-11-03 12:23:42 [main]  INFO o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+2021-11-03 12:23:42 [main]  INFO org.hibernate.Version - HHH000412: Hibernate ORM core version 5.4.32.Final
+2021-11-03 12:23:42 [main]  INFO o.h.annotations.common.Version - HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2021-11-03 12:23:43 [main]  INFO com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2021-11-03 12:23:43 [main]  INFO com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2021-11-03 12:23:43 [main]  INFO org.hibernate.dialect.Dialect - HHH000400: Using dialect: org.hibernate.dialect.MySQL8Dialect
+2021-11-03 12:23:45 [main]  INFO o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2021-11-03 12:23:45 [main]  INFO o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2021-11-03 12:23:45 [main]  WARN o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2021-11-03 12:23:46 [main]  INFO o.s.s.web.DefaultSecurityFilterChain - Will secure any request with [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@44df834c, org.springframework.security.web.context.SecurityContextPersistenceFilter@78f35e39, org.springframework.security.web.header.HeaderWriterFilter@623ded82, org.springframework.security.web.csrf.CsrfFilter@558575fe, org.springframework.security.web.authentication.logout.LogoutFilter@222eda8a, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@22ea6051, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@69fe8c75, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@384f0e32, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@34c07ecc, org.springframework.security.web.session.SessionManagementFilter@270be080, org.springframework.security.web.access.ExceptionTranslationFilter@7ea8224b, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@6a261998]
+2021-11-03 12:23:47 [main]  INFO o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 8080 (http) with context path ''
+2021-11-03 12:23:47 [main]  INFO u.l.l.p.PeriodicalsApplication - Started PeriodicalsApplication in 10.73 seconds (JVM running for 11.716)
+2021-11-03 12:23:57 [http-nio-8080-exec-1]  INFO o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2021-11-03 12:24:07 [http-nio-8080-exec-9]  INFO u.l.l.p.service.PeriodicalsService - Get all periodicals items
+2021-11-03 12:24:28 [http-nio-8080-exec-10]  INFO u.l.l.p.service.PeriodicalsService - Get all periodicals items
+2021-11-03 12:25:43 [main]  INFO u.l.l.p.PeriodicalsApplication - Starting PeriodicalsApplication using Java 15.0.1 on DESKTOP-EC73OSQ with PID 6912 (D:\Zenyk\Java\eclipse-workspace\JA-Project\periodicals\target\classes started by livch in D:\Zenyk\Java\eclipse-workspace\JA-Project\periodicals)
+2021-11-03 12:25:43 [main] DEBUG u.l.l.p.PeriodicalsApplication - Running with Spring Boot v2.5.4, Spring v5.3.9
+2021-11-03 12:25:43 [main]  INFO u.l.l.p.PeriodicalsApplication - No active profile set, falling back to default profiles: default
+2021-11-03 12:25:44 [main]  INFO o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2021-11-03 12:25:44 [main]  INFO o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 124 ms. Found 3 JPA repository interfaces.
+2021-11-03 12:25:46 [main]  INFO o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8080 (http)
+2021-11-03 12:25:46 [main]  INFO o.a.catalina.core.StandardService - Starting service [Tomcat]
+2021-11-03 12:25:46 [main]  INFO o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.52]
+2021-11-03 12:25:47 [main]  INFO org.apache.jasper.servlet.TldScanner - At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+2021-11-03 12:25:47 [main]  INFO o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2021-11-03 12:25:47 [main]  INFO o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 3753 ms
+2021-11-03 12:25:47 [main]  INFO o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+2021-11-03 12:25:47 [main]  INFO org.hibernate.Version - HHH000412: Hibernate ORM core version 5.4.32.Final
+2021-11-03 12:25:47 [main]  INFO o.h.annotations.common.Version - HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2021-11-03 12:25:48 [main]  INFO com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2021-11-03 12:25:48 [main]  INFO com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2021-11-03 12:25:48 [main]  INFO org.hibernate.dialect.Dialect - HHH000400: Using dialect: org.hibernate.dialect.MySQL8Dialect
+2021-11-03 12:25:50 [main]  INFO o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2021-11-03 12:25:50 [main]  INFO o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2021-11-03 12:25:50 [main]  WARN o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2021-11-03 12:25:51 [main]  INFO o.s.s.web.DefaultSecurityFilterChain - Will secure any request with [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@71817f66, org.springframework.security.web.context.SecurityContextPersistenceFilter@67baa05, org.springframework.security.web.header.HeaderWriterFilter@384f0e32, org.springframework.security.web.csrf.CsrfFilter@5eff5e4c, org.springframework.security.web.authentication.logout.LogoutFilter@76eee0b1, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@27b7e663, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@267b678f, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@10b5ff4d, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@68feca3a, org.springframework.security.web.session.SessionManagementFilter@5f14590c, org.springframework.security.web.access.ExceptionTranslationFilter@20462820, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@14ee143a]
+2021-11-03 12:25:52 [main]  INFO o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 8080 (http) with context path ''
+2021-11-03 12:25:52 [main]  INFO u.l.l.p.PeriodicalsApplication - Started PeriodicalsApplication in 10.381 seconds (JVM running for 11.386)
+2021-11-03 12:25:56 [http-nio-8080-exec-1]  INFO o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2021-11-03 12:26:10 [http-nio-8080-exec-10]  INFO u.l.l.p.service.PeriodicalsService - Get all periodicals items
+2021-11-03 12:32:46 [main]  INFO u.l.l.p.PeriodicalsApplication - Starting PeriodicalsApplication using Java 15.0.1 on DESKTOP-EC73OSQ with PID 6096 (D:\Zenyk\Java\eclipse-workspace\JA-Project\periodicals\target\classes started by livch in D:\Zenyk\Java\eclipse-workspace\JA-Project\periodicals)
+2021-11-03 12:32:46 [main] DEBUG u.l.l.p.PeriodicalsApplication - Running with Spring Boot v2.5.4, Spring v5.3.9
+2021-11-03 12:32:46 [main]  INFO u.l.l.p.PeriodicalsApplication - No active profile set, falling back to default profiles: default
+2021-11-03 12:32:48 [main]  INFO o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2021-11-03 12:32:48 [main]  INFO o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 127 ms. Found 3 JPA repository interfaces.
+2021-11-03 12:32:50 [main]  INFO o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8080 (http)
+2021-11-03 12:32:50 [main]  INFO o.a.catalina.core.StandardService - Starting service [Tomcat]
+2021-11-03 12:32:50 [main]  INFO o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.52]
+2021-11-03 12:32:51 [main]  INFO org.apache.jasper.servlet.TldScanner - At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+2021-11-03 12:32:51 [main]  INFO o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2021-11-03 12:32:51 [main]  INFO o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 4080 ms
+2021-11-03 12:32:51 [main]  INFO o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+2021-11-03 12:32:51 [main]  INFO org.hibernate.Version - HHH000412: Hibernate ORM core version 5.4.32.Final
+2021-11-03 12:32:52 [main]  INFO o.h.annotations.common.Version - HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2021-11-03 12:32:52 [main]  INFO com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2021-11-03 12:32:52 [main]  INFO com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2021-11-03 12:32:53 [main]  INFO org.hibernate.dialect.Dialect - HHH000400: Using dialect: org.hibernate.dialect.MySQL8Dialect
+2021-11-03 12:32:54 [main]  INFO o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2021-11-03 12:32:54 [main]  INFO o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2021-11-03 12:32:55 [main]  WARN o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2021-11-03 12:32:56 [main]  INFO o.s.s.web.DefaultSecurityFilterChain - Will secure any request with [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@29b0c169, org.springframework.security.web.context.SecurityContextPersistenceFilter@20462820, org.springframework.security.web.header.HeaderWriterFilter@15c3585, org.springframework.security.web.csrf.CsrfFilter@7a78d2aa, org.springframework.security.web.authentication.logout.LogoutFilter@4880a9d, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@7df23848, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@384f0e32, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@13731ff4, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@4d1b4fa1, org.springframework.security.web.session.SessionManagementFilter@468646ea, org.springframework.security.web.access.ExceptionTranslationFilter@69fe8c75, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@87f1201]
+2021-11-03 12:32:57 [main]  INFO o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 8080 (http) with context path ''
+2021-11-03 12:32:57 [main]  INFO u.l.l.p.PeriodicalsApplication - Started PeriodicalsApplication in 11.051 seconds (JVM running for 12.095)
+2021-11-03 12:34:05 [http-nio-8080-exec-1]  INFO o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2021-11-03 12:34:18 [http-nio-8080-exec-9]  INFO u.l.l.p.service.PeriodicalsService - Get all periodicals items
+2021-11-03 12:35:28 [main]  INFO u.l.l.p.PeriodicalsApplication - Starting PeriodicalsApplication using Java 15.0.1 on DESKTOP-EC73OSQ with PID 5532 (D:\Zenyk\Java\eclipse-workspace\JA-Project\periodicals\target\classes started by livch in D:\Zenyk\Java\eclipse-workspace\JA-Project\periodicals)
+2021-11-03 12:35:28 [main] DEBUG u.l.l.p.PeriodicalsApplication - Running with Spring Boot v2.5.4, Spring v5.3.9
+2021-11-03 12:35:28 [main]  INFO u.l.l.p.PeriodicalsApplication - No active profile set, falling back to default profiles: default
+2021-11-03 12:35:29 [main]  INFO o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2021-11-03 12:35:29 [main]  INFO o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 125 ms. Found 3 JPA repository interfaces.
+2021-11-03 12:35:31 [main]  INFO o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8080 (http)
+2021-11-03 12:35:31 [main]  INFO o.a.catalina.core.StandardService - Starting service [Tomcat]
+2021-11-03 12:35:31 [main]  INFO o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.52]
+2021-11-03 12:35:32 [main]  INFO org.apache.jasper.servlet.TldScanner - At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+2021-11-03 12:35:32 [main]  INFO o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2021-11-03 12:35:32 [main]  INFO o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 4056 ms
+2021-11-03 12:35:32 [main]  INFO o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+2021-11-03 12:35:32 [main]  INFO org.hibernate.Version - HHH000412: Hibernate ORM core version 5.4.32.Final
+2021-11-03 12:35:33 [main]  INFO o.h.annotations.common.Version - HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2021-11-03 12:35:33 [main]  INFO com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2021-11-03 12:35:34 [main]  INFO com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2021-11-03 12:35:34 [main]  INFO org.hibernate.dialect.Dialect - HHH000400: Using dialect: org.hibernate.dialect.MySQL8Dialect
+2021-11-03 12:35:35 [main]  INFO o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2021-11-03 12:35:35 [main]  INFO o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2021-11-03 12:35:35 [main]  WARN o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2021-11-03 12:35:37 [main]  INFO o.s.s.web.DefaultSecurityFilterChain - Will secure any request with [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@1b120d48, org.springframework.security.web.context.SecurityContextPersistenceFilter@11896124, org.springframework.security.web.header.HeaderWriterFilter@180e33b0, org.springframework.security.web.csrf.CsrfFilter@25fcdcc6, org.springframework.security.web.authentication.logout.LogoutFilter@3331800f, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@87f1201, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@633cad4d, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@4e826fd4, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@236f3885, org.springframework.security.web.session.SessionManagementFilter@752ffce3, org.springframework.security.web.access.ExceptionTranslationFilter@5a010eec, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@15bcecf9]
+2021-11-03 12:35:37 [main]  INFO o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 8080 (http) with context path ''
+2021-11-03 12:35:37 [main]  INFO u.l.l.p.PeriodicalsApplication - Started PeriodicalsApplication in 10.606 seconds (JVM running for 11.635)
+2021-11-03 12:37:03 [http-nio-8080-exec-1]  INFO o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2021-11-03 12:37:15 [http-nio-8080-exec-10]  INFO u.l.l.p.service.PeriodicalsService - Get all periodicals items
+2021-11-03 12:39:20 [main]  INFO u.l.l.p.PeriodicalsApplication - Starting PeriodicalsApplication using Java 15.0.1 on DESKTOP-EC73OSQ with PID 5240 (D:\Zenyk\Java\eclipse-workspace\JA-Project\periodicals\target\classes started by livch in D:\Zenyk\Java\eclipse-workspace\JA-Project\periodicals)
+2021-11-03 12:39:20 [main] DEBUG u.l.l.p.PeriodicalsApplication - Running with Spring Boot v2.5.4, Spring v5.3.9
+2021-11-03 12:39:20 [main]  INFO u.l.l.p.PeriodicalsApplication - No active profile set, falling back to default profiles: default
+2021-11-03 12:39:21 [main]  INFO o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2021-11-03 12:39:22 [main]  INFO o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 119 ms. Found 3 JPA repository interfaces.
+2021-11-03 12:39:23 [main]  INFO o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8080 (http)
+2021-11-03 12:39:23 [main]  INFO o.a.catalina.core.StandardService - Starting service [Tomcat]
+2021-11-03 12:39:23 [main]  INFO o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.52]
+2021-11-03 12:39:24 [main]  INFO org.apache.jasper.servlet.TldScanner - At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+2021-11-03 12:39:24 [main]  INFO o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2021-11-03 12:39:24 [main]  INFO o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 3820 ms
+2021-11-03 12:39:24 [main]  INFO o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+2021-11-03 12:39:24 [main]  INFO org.hibernate.Version - HHH000412: Hibernate ORM core version 5.4.32.Final
+2021-11-03 12:39:24 [main]  INFO o.h.annotations.common.Version - HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2021-11-03 12:39:25 [main]  INFO com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2021-11-03 12:39:25 [main]  INFO com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2021-11-03 12:39:25 [main]  INFO org.hibernate.dialect.Dialect - HHH000400: Using dialect: org.hibernate.dialect.MySQL8Dialect
+2021-11-03 12:39:27 [main]  INFO o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2021-11-03 12:39:27 [main]  INFO o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2021-11-03 12:39:27 [main]  WARN o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2021-11-03 12:39:28 [main]  INFO o.s.s.web.DefaultSecurityFilterChain - Will secure any request with [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@6b170692, org.springframework.security.web.context.SecurityContextPersistenceFilter@347f8029, org.springframework.security.web.header.HeaderWriterFilter@5b5a89d1, org.springframework.security.web.csrf.CsrfFilter@623ded82, org.springframework.security.web.authentication.logout.LogoutFilter@75507e68, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@76ee7301, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@630e5010, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@257d3968, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@4d4bac56, org.springframework.security.web.session.SessionManagementFilter@4803bf73, org.springframework.security.web.access.ExceptionTranslationFilter@46051269, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@27b7e663]
+2021-11-03 12:39:29 [main]  WARN o.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.context.ApplicationContextException: Failed to start bean 'webServerStartStop'; nested exception is org.springframework.boot.web.server.PortInUseException: Port 8080 is already in use
+2021-11-03 12:39:29 [main]  INFO o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+2021-11-03 12:39:29 [main]  INFO com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2021-11-03 12:39:29 [main]  INFO com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+2021-11-03 12:39:29 [main]  INFO o.a.catalina.core.StandardService - Stopping service [Tomcat]
+2021-11-03 12:39:29 [main]  INFO o.s.b.a.l.ConditionEvaluationReportLoggingListener - 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2021-11-03 12:39:29 [main] ERROR o.s.b.d.LoggingFailureAnalysisReporter - 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Web server failed to start. Port 8080 was already in use.
+
+Action:
+
+Identify and stop the process that's listening on port 8080 or configure this application to listen on another port.
+
+2021-11-03 12:39:43 [main]  INFO u.l.l.p.PeriodicalsApplication - Starting PeriodicalsApplication using Java 15.0.1 on DESKTOP-EC73OSQ with PID 15264 (D:\Zenyk\Java\eclipse-workspace\JA-Project\periodicals\target\classes started by livch in D:\Zenyk\Java\eclipse-workspace\JA-Project\periodicals)
+2021-11-03 12:39:43 [main] DEBUG u.l.l.p.PeriodicalsApplication - Running with Spring Boot v2.5.4, Spring v5.3.9
+2021-11-03 12:39:43 [main]  INFO u.l.l.p.PeriodicalsApplication - No active profile set, falling back to default profiles: default
+2021-11-03 12:39:44 [main]  INFO o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2021-11-03 12:39:45 [main]  INFO o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 140 ms. Found 3 JPA repository interfaces.
+2021-11-03 12:39:46 [main]  INFO o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8080 (http)
+2021-11-03 12:39:46 [main]  INFO o.a.catalina.core.StandardService - Starting service [Tomcat]
+2021-11-03 12:39:46 [main]  INFO o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.52]
+2021-11-03 12:39:47 [main]  INFO org.apache.jasper.servlet.TldScanner - At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+2021-11-03 12:39:47 [main]  INFO o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2021-11-03 12:39:47 [main]  INFO o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 4280 ms
+2021-11-03 12:39:48 [main]  INFO o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+2021-11-03 12:39:48 [main]  INFO org.hibernate.Version - HHH000412: Hibernate ORM core version 5.4.32.Final
+2021-11-03 12:39:48 [main]  INFO o.h.annotations.common.Version - HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2021-11-03 12:39:48 [main]  INFO com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2021-11-03 12:39:49 [main]  INFO com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2021-11-03 12:39:49 [main]  INFO org.hibernate.dialect.Dialect - HHH000400: Using dialect: org.hibernate.dialect.MySQL8Dialect
+2021-11-03 12:39:50 [main]  INFO o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2021-11-03 12:39:50 [main]  INFO o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2021-11-03 12:39:51 [main]  WARN o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2021-11-03 12:39:52 [main]  INFO o.s.s.web.DefaultSecurityFilterChain - Will secure any request with [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@4d4bac56, org.springframework.security.web.context.SecurityContextPersistenceFilter@61d24347, org.springframework.security.web.header.HeaderWriterFilter@267b678f, org.springframework.security.web.csrf.CsrfFilter@180e33b0, org.springframework.security.web.authentication.logout.LogoutFilter@40d04cf8, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@71817f66, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@3f78a5ed, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@1a73f3d1, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@76980c75, org.springframework.security.web.session.SessionManagementFilter@13731ff4, org.springframework.security.web.access.ExceptionTranslationFilter@67baa05, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@5f2ad3d5]
+2021-11-03 12:39:52 [main]  INFO o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 8080 (http) with context path ''
+2021-11-03 12:39:52 [main]  INFO u.l.l.p.PeriodicalsApplication - Started PeriodicalsApplication in 10.637 seconds (JVM running for 11.547)
+2021-11-03 12:39:56 [http-nio-8080-exec-1]  INFO o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2021-11-03 12:39:56 [http-nio-8080-exec-1]  WARN o.a.c.util.SessionIdGeneratorBase - Creation of SecureRandom instance for session ID generation using [SHA1PRNG] took [127] milliseconds.
+2021-11-03 12:40:08 [http-nio-8080-exec-9]  INFO u.l.l.p.service.PeriodicalsService - Get all periodicals items
+2021-11-03 12:41:10 [http-nio-8080-exec-7]  INFO u.l.l.p.service.BucketService - Get all buckets items
+2021-11-03 12:46:59 [main]  INFO u.l.l.p.PeriodicalsApplication - Starting PeriodicalsApplication using Java 15.0.1 on DESKTOP-EC73OSQ with PID 6096 (D:\Zenyk\Java\eclipse-workspace\JA-Project\periodicals\target\classes started by livch in D:\Zenyk\Java\eclipse-workspace\JA-Project\periodicals)
+2021-11-03 12:46:59 [main] DEBUG u.l.l.p.PeriodicalsApplication - Running with Spring Boot v2.5.4, Spring v5.3.9
+2021-11-03 12:46:59 [main]  INFO u.l.l.p.PeriodicalsApplication - No active profile set, falling back to default profiles: default
+2021-11-03 12:47:01 [main]  INFO o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2021-11-03 12:47:01 [main]  INFO o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 124 ms. Found 3 JPA repository interfaces.
+2021-11-03 12:47:03 [main]  INFO o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8080 (http)
+2021-11-03 12:47:03 [main]  INFO o.a.catalina.core.StandardService - Starting service [Tomcat]
+2021-11-03 12:47:03 [main]  INFO o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.52]
+2021-11-03 12:47:03 [main]  INFO org.apache.jasper.servlet.TldScanner - At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+2021-11-03 12:47:03 [main]  INFO o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2021-11-03 12:47:03 [main]  INFO o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 3936 ms
+2021-11-03 12:47:04 [main]  INFO o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+2021-11-03 12:47:04 [main]  INFO org.hibernate.Version - HHH000412: Hibernate ORM core version 5.4.32.Final
+2021-11-03 12:47:04 [main]  INFO o.h.annotations.common.Version - HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2021-11-03 12:47:04 [main]  INFO com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2021-11-03 12:47:05 [main]  INFO com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2021-11-03 12:47:05 [main]  INFO org.hibernate.dialect.Dialect - HHH000400: Using dialect: org.hibernate.dialect.MySQL8Dialect
+2021-11-03 12:47:07 [main]  INFO o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2021-11-03 12:47:07 [main]  INFO o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2021-11-03 12:47:07 [main]  WARN o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2021-11-03 12:47:08 [main]  INFO o.s.s.web.DefaultSecurityFilterChain - Will secure any request with [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@3696d12d, org.springframework.security.web.context.SecurityContextPersistenceFilter@10b5ff4d, org.springframework.security.web.header.HeaderWriterFilter@61d24347, org.springframework.security.web.csrf.CsrfFilter@11896124, org.springframework.security.web.authentication.logout.LogoutFilter@12478b4e, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@ad585fb, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@222eda8a, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@4880a9d, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@656672fb, org.springframework.security.web.session.SessionManagementFilter@3f78a5ed, org.springframework.security.web.access.ExceptionTranslationFilter@13731ff4, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@674fd531]
+2021-11-03 12:47:09 [main]  INFO o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 8080 (http) with context path ''
+2021-11-03 12:47:09 [main]  INFO u.l.l.p.PeriodicalsApplication - Started PeriodicalsApplication in 10.695 seconds (JVM running for 11.704)
+2021-11-03 12:47:41 [http-nio-8080-exec-1]  INFO o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2021-11-03 12:47:55 [http-nio-8080-exec-8]  INFO u.l.l.p.service.BucketService - Get all buckets items
+2021-11-03 12:48:10 [http-nio-8080-exec-5]  INFO u.l.l.p.service.BucketService - Get all buckets items
+2021-11-03 12:48:12 [http-nio-8080-exec-10]  INFO u.l.l.p.service.PeriodicalsService - Get all periodicals items
+2021-11-03 12:48:14 [http-nio-8080-exec-6]  INFO u.l.l.p.service.PeriodicalsService - Get all periodicals items
+2021-11-03 12:48:15 [http-nio-8080-exec-4]  INFO u.l.l.p.service.BucketService - Get all buckets items
+2021-11-03 12:56:10 [main]  INFO u.l.l.p.PeriodicalsApplication - Starting PeriodicalsApplication using Java 15.0.1 on DESKTOP-EC73OSQ with PID 12568 (D:\Zenyk\Java\eclipse-workspace\JA-Project\periodicals\target\classes started by livch in D:\Zenyk\Java\eclipse-workspace\JA-Project\periodicals)
+2021-11-03 12:56:10 [main] DEBUG u.l.l.p.PeriodicalsApplication - Running with Spring Boot v2.5.4, Spring v5.3.9
+2021-11-03 12:56:10 [main]  INFO u.l.l.p.PeriodicalsApplication - No active profile set, falling back to default profiles: default
+2021-11-03 12:56:12 [main]  INFO o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2021-11-03 12:56:12 [main]  INFO o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 124 ms. Found 3 JPA repository interfaces.
+2021-11-03 12:56:14 [main]  INFO o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8080 (http)
+2021-11-03 12:56:14 [main]  INFO o.a.catalina.core.StandardService - Starting service [Tomcat]
+2021-11-03 12:56:14 [main]  INFO o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.52]
+2021-11-03 12:56:15 [main]  INFO org.apache.jasper.servlet.TldScanner - At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+2021-11-03 12:56:15 [main]  INFO o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2021-11-03 12:56:15 [main]  INFO o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 4286 ms
+2021-11-03 12:56:15 [main]  INFO o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+2021-11-03 12:56:15 [main]  INFO org.hibernate.Version - HHH000412: Hibernate ORM core version 5.4.32.Final
+2021-11-03 12:56:15 [main]  INFO o.h.annotations.common.Version - HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2021-11-03 12:56:16 [main]  INFO com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2021-11-03 12:56:16 [main]  INFO com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2021-11-03 12:56:16 [main]  INFO org.hibernate.dialect.Dialect - HHH000400: Using dialect: org.hibernate.dialect.MySQL8Dialect
+2021-11-03 12:56:18 [main]  INFO o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2021-11-03 12:56:18 [main]  INFO o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2021-11-03 12:56:18 [main]  WARN o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2021-11-03 12:56:19 [main]  INFO o.s.s.web.DefaultSecurityFilterChain - Will secure any request with [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@75a6bd06, org.springframework.security.web.context.SecurityContextPersistenceFilter@61d24347, org.springframework.security.web.header.HeaderWriterFilter@267b678f, org.springframework.security.web.csrf.CsrfFilter@180e33b0, org.springframework.security.web.authentication.logout.LogoutFilter@40d04cf8, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@7f53b345, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@3f78a5ed, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@1a73f3d1, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@6b170692, org.springframework.security.web.session.SessionManagementFilter@13731ff4, org.springframework.security.web.access.ExceptionTranslationFilter@67baa05, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@4d1b4fa1]
+2021-11-03 12:56:20 [main]  INFO o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 8080 (http) with context path ''
+2021-11-03 12:56:20 [main]  INFO u.l.l.p.PeriodicalsApplication - Started PeriodicalsApplication in 10.704 seconds (JVM running for 11.836)
+2021-11-03 12:56:49 [http-nio-8080-exec-1]  INFO o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2021-11-03 12:57:04 [http-nio-8080-exec-8]  INFO u.l.l.p.service.BucketService - Get all buckets items
+2021-11-03 12:57:12 [http-nio-8080-exec-4]  INFO u.l.l.p.service.BucketService - Get all buckets items
+2021-11-03 12:57:14 [http-nio-8080-exec-1]  INFO u.l.l.p.service.PeriodicalsService - Get all periodicals items
+2021-11-03 12:57:16 [http-nio-8080-exec-7]  INFO u.l.l.p.service.BucketService - Get all buckets items
+2021-11-03 12:57:29 [http-nio-8080-exec-5]  INFO u.l.l.p.service.BucketService - Delete bucket item {} :Bucket [id=31, user=User [id=4, email=user@gmail.com, firstName=user, lastName=user, role=ROLE_USER, password=$2a$10$D06LjYs9rUvzCRgHu7Ji5.zssv3h9L7d/edqKCqYnvOork1VZqdiG], periodical=Periodical [id=17, name=Mitsubishi, description=xl, price=10.0], purchaseDate=2021-11-01 11:56:41.312]
+2021-11-03 12:57:30 [http-nio-8080-exec-5]  INFO u.l.l.p.service.BucketService - Get all buckets items
+2021-11-03 12:57:31 [http-nio-8080-exec-8]  INFO u.l.l.p.service.PeriodicalsService - Get all periodicals items
+2021-11-03 12:57:33 [http-nio-8080-exec-3]  INFO u.l.l.p.service.PeriodicalsService - Get periodical item by id:18
+2021-11-03 12:57:33 [http-nio-8080-exec-3]  INFO u.l.l.p.service.UserService - Get user {} by email: user@gmail.com
+2021-11-03 12:57:33 [http-nio-8080-exec-3]  INFO u.l.l.p.service.BucketService - Create new bucket item {}: Bucket [id=null, user=User [id=4, email=user@gmail.com, firstName=user, lastName=user, role=ROLE_USER, password=$2a$10$D06LjYs9rUvzCRgHu7Ji5.zssv3h9L7d/edqKCqYnvOork1VZqdiG], periodical=Periodical [id=18, name=Mitsubishi, description=xl, price=100.0], purchaseDate=Wed Nov 03 12:57:33 EET 2021]
+2021-11-03 12:57:33 [http-nio-8080-exec-3]  INFO u.l.l.p.service.BucketService - Get all buckets items
+2021-11-03 12:57:36 [http-nio-8080-exec-1]  INFO u.l.l.p.service.PeriodicalsService - Get all periodicals items
+2021-11-03 12:57:37 [http-nio-8080-exec-7]  INFO u.l.l.p.service.PeriodicalsService - Get periodical item by id:17
+2021-11-03 12:57:37 [http-nio-8080-exec-7]  INFO u.l.l.p.service.UserService - Get user {} by email: user@gmail.com
+2021-11-03 12:57:37 [http-nio-8080-exec-7]  INFO u.l.l.p.service.BucketService - Create new bucket item {}: Bucket [id=null, user=User [id=4, email=user@gmail.com, firstName=user, lastName=user, role=ROLE_USER, password=$2a$10$D06LjYs9rUvzCRgHu7Ji5.zssv3h9L7d/edqKCqYnvOork1VZqdiG], periodical=Periodical [id=17, name=Mitsubishi, description=xl, price=10.0], purchaseDate=Wed Nov 03 12:57:37 EET 2021]
+2021-11-03 12:57:37 [http-nio-8080-exec-7]  INFO u.l.l.p.service.BucketService - Get all buckets items
+2021-11-03 12:57:39 [http-nio-8080-exec-5]  INFO u.l.l.p.service.BucketService - Delete bucket item {} :Bucket [id=35, user=User [id=4, email=user@gmail.com, firstName=user, lastName=user, role=ROLE_USER, password=$2a$10$D06LjYs9rUvzCRgHu7Ji5.zssv3h9L7d/edqKCqYnvOork1VZqdiG], periodical=Periodical [id=18, name=Mitsubishi, description=xl, price=100.0], purchaseDate=2021-11-03 12:57:33.287]
+2021-11-03 12:57:39 [http-nio-8080-exec-5]  INFO u.l.l.p.service.BucketService - Get all buckets items
+2021-11-03 12:58:09 [http-nio-8080-exec-10]  INFO u.l.l.p.service.PeriodicalsService - Get all periodicals items
+2021-11-03 12:58:14 [http-nio-8080-exec-1]  INFO u.l.l.p.service.PeriodicalsService - Get all periodicals items
+2021-11-03 12:58:15 [http-nio-8080-exec-7]  INFO u.l.l.p.service.PeriodicalsService - Get all periodicals items
+2021-11-03 12:58:16 [http-nio-8080-exec-4] ERROR o.a.c.c.C.[.[localhost].[/].[jsp] - Servlet.service() for servlet [jsp] threw exception
+org.apache.jasper.JasperException: /jsp/createPeriodical.jsp (line: [7], column: [1]) Page directive: illegal to have multiple occurrences of 'contentType' with different values (old: [text/html; charset=UTF-8], new: [text/html; charset=ISO-8859-1])
+	at org.apache.jasper.compiler.DefaultErrorHandler.jspError(DefaultErrorHandler.java:41)
+	at org.apache.jasper.compiler.ErrorDispatcher.dispatch(ErrorDispatcher.java:292)
+	at org.apache.jasper.compiler.ErrorDispatcher.jspError(ErrorDispatcher.java:115)
+	at org.apache.jasper.compiler.Validator$DirectiveVisitor.visit(Validator.java:139)
+	at org.apache.jasper.compiler.Node$PageDirective.accept(Node.java:580)
+	at org.apache.jasper.compiler.Node$Nodes.visit(Node.java:2385)
+	at org.apache.jasper.compiler.Node$Visitor.visitBody(Node.java:2437)
+	at org.apache.jasper.compiler.Node$Visitor.visit(Node.java:2443)
+	at org.apache.jasper.compiler.Node$Root.accept(Node.java:471)
+	at org.apache.jasper.compiler.Node$Nodes.visit(Node.java:2385)
+	at org.apache.jasper.compiler.Validator.validateDirectives(Validator.java:1829)
+	at org.apache.jasper.compiler.Compiler.generateJava(Compiler.java:203)
+	at org.apache.jasper.compiler.Compiler.compile(Compiler.java:391)
+	at org.apache.jasper.compiler.Compiler.compile(Compiler.java:367)
+	at org.apache.jasper.compiler.Compiler.compile(Compiler.java:351)
+	at org.apache.jasper.JspCompilationContext.compile(JspCompilationContext.java:605)
+	at org.apache.jasper.servlet.JspServletWrapper.service(JspServletWrapper.java:399)
+	at org.apache.jasper.servlet.JspServlet.serviceJspFile(JspServlet.java:379)
+	at org.apache.jasper.servlet.JspServlet.service(JspServlet.java:327)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:764)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:227)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:113)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:113)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:113)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.apache.catalina.core.ApplicationDispatcher.invoke(ApplicationDispatcher.java:711)
+	at org.apache.catalina.core.ApplicationDispatcher.processRequest(ApplicationDispatcher.java:459)
+	at org.apache.catalina.core.ApplicationDispatcher.doForward(ApplicationDispatcher.java:385)
+	at org.apache.catalina.core.ApplicationDispatcher.forward(ApplicationDispatcher.java:313)
+	at org.springframework.security.web.header.HeaderWriterFilter$HeaderWriterRequestDispatcher.forward(HeaderWriterFilter.java:171)
+	at org.springframework.web.servlet.view.InternalResourceView.renderMergedOutputModel(InternalResourceView.java:171)
+	at org.springframework.web.servlet.view.AbstractView.render(AbstractView.java:316)
+	at org.springframework.web.servlet.DispatcherServlet.render(DispatcherServlet.java:1397)
+	at org.springframework.web.servlet.DispatcherServlet.processDispatchResult(DispatcherServlet.java:1142)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1081)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:963)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1006)
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:898)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:655)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:883)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:764)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:227)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:327)
+	at org.springframework.security.web.access.intercept.FilterSecurityInterceptor.invoke(FilterSecurityInterceptor.java:115)
+	at org.springframework.security.web.access.intercept.FilterSecurityInterceptor.doFilter(FilterSecurityInterceptor.java:81)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:336)
+	at org.springframework.security.web.access.ExceptionTranslationFilter.doFilter(ExceptionTranslationFilter.java:121)
+	at org.springframework.security.web.access.ExceptionTranslationFilter.doFilter(ExceptionTranslationFilter.java:115)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:336)
+	at org.springframework.security.web.session.SessionManagementFilter.doFilter(SessionManagementFilter.java:126)
+	at org.springframework.security.web.session.SessionManagementFilter.doFilter(SessionManagementFilter.java:81)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:336)
+	at org.springframework.security.web.authentication.AnonymousAuthenticationFilter.doFilter(AnonymousAuthenticationFilter.java:105)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:336)
+	at org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter.doFilter(SecurityContextHolderAwareRequestFilter.java:149)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:336)
+	at org.springframework.security.web.savedrequest.RequestCacheAwareFilter.doFilter(RequestCacheAwareFilter.java:63)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:336)
+	at org.springframework.security.web.authentication.AbstractAuthenticationProcessingFilter.doFilter(AbstractAuthenticationProcessingFilter.java:218)
+	at org.springframework.security.web.authentication.AbstractAuthenticationProcessingFilter.doFilter(AbstractAuthenticationProcessingFilter.java:212)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:336)
+	at org.springframework.security.web.authentication.logout.LogoutFilter.doFilter(LogoutFilter.java:103)
+	at org.springframework.security.web.authentication.logout.LogoutFilter.doFilter(LogoutFilter.java:89)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:336)
+	at org.springframework.security.web.csrf.CsrfFilter.doFilterInternal(CsrfFilter.java:117)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:336)
+	at org.springframework.security.web.header.HeaderWriterFilter.doHeadersAfter(HeaderWriterFilter.java:90)
+	at org.springframework.security.web.header.HeaderWriterFilter.doFilterInternal(HeaderWriterFilter.java:75)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:336)
+	at org.springframework.security.web.context.SecurityContextPersistenceFilter.doFilter(SecurityContextPersistenceFilter.java:110)
+	at org.springframework.security.web.context.SecurityContextPersistenceFilter.doFilter(SecurityContextPersistenceFilter.java:80)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:336)
+	at org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter.doFilterInternal(WebAsyncManagerIntegrationFilter.java:55)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:336)
+	at org.springframework.security.web.FilterChainProxy.doFilterInternal(FilterChainProxy.java:211)
+	at org.springframework.security.web.FilterChainProxy.doFilter(FilterChainProxy.java:183)
+	at org.springframework.web.filter.DelegatingFilterProxy.invokeDelegate(DelegatingFilterProxy.java:358)
+	at org.springframework.web.filter.DelegatingFilterProxy.doFilter(DelegatingFilterProxy.java:271)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:197)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:97)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:542)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:135)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:78)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:357)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:382)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:893)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1726)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.base/java.lang.Thread.run(Thread.java:832)
+2021-11-03 12:58:16 [http-nio-8080-exec-4] ERROR o.a.c.c.C.[.[.[.[dispatcherServlet] - Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [/jsp/createPeriodical.jsp (line: [7], column: [1]) Page directive: illegal to have multiple occurrences of 'contentType' with different values (old: [text/html; charset=UTF-8], new: [text/html; charset=ISO-8859-1])] with root cause
+org.apache.jasper.JasperException: /jsp/createPeriodical.jsp (line: [7], column: [1]) Page directive: illegal to have multiple occurrences of 'contentType' with different values (old: [text/html; charset=UTF-8], new: [text/html; charset=ISO-8859-1])
+	at org.apache.jasper.compiler.DefaultErrorHandler.jspError(DefaultErrorHandler.java:41)
+	at org.apache.jasper.compiler.ErrorDispatcher.dispatch(ErrorDispatcher.java:292)
+	at org.apache.jasper.compiler.ErrorDispatcher.jspError(ErrorDispatcher.java:115)
+	at org.apache.jasper.compiler.Validator$DirectiveVisitor.visit(Validator.java:139)
+	at org.apache.jasper.compiler.Node$PageDirective.accept(Node.java:580)
+	at org.apache.jasper.compiler.Node$Nodes.visit(Node.java:2385)
+	at org.apache.jasper.compiler.Node$Visitor.visitBody(Node.java:2437)
+	at org.apache.jasper.compiler.Node$Visitor.visit(Node.java:2443)
+	at org.apache.jasper.compiler.Node$Root.accept(Node.java:471)
+	at org.apache.jasper.compiler.Node$Nodes.visit(Node.java:2385)
+	at org.apache.jasper.compiler.Validator.validateDirectives(Validator.java:1829)
+	at org.apache.jasper.compiler.Compiler.generateJava(Compiler.java:203)
+	at org.apache.jasper.compiler.Compiler.compile(Compiler.java:391)
+	at org.apache.jasper.compiler.Compiler.compile(Compiler.java:367)
+	at org.apache.jasper.compiler.Compiler.compile(Compiler.java:351)
+	at org.apache.jasper.JspCompilationContext.compile(JspCompilationContext.java:605)
+	at org.apache.jasper.servlet.JspServletWrapper.service(JspServletWrapper.java:399)
+	at org.apache.jasper.servlet.JspServlet.serviceJspFile(JspServlet.java:379)
+	at org.apache.jasper.servlet.JspServlet.service(JspServlet.java:327)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:764)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:227)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:113)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:113)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:113)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.apache.catalina.core.ApplicationDispatcher.invoke(ApplicationDispatcher.java:711)
+	at org.apache.catalina.core.ApplicationDispatcher.processRequest(ApplicationDispatcher.java:459)
+	at org.apache.catalina.core.ApplicationDispatcher.doForward(ApplicationDispatcher.java:385)
+	at org.apache.catalina.core.ApplicationDispatcher.forward(ApplicationDispatcher.java:313)
+	at org.springframework.security.web.header.HeaderWriterFilter$HeaderWriterRequestDispatcher.forward(HeaderWriterFilter.java:171)
+	at org.springframework.web.servlet.view.InternalResourceView.renderMergedOutputModel(InternalResourceView.java:171)
+	at org.springframework.web.servlet.view.AbstractView.render(AbstractView.java:316)
+	at org.springframework.web.servlet.DispatcherServlet.render(DispatcherServlet.java:1397)
+	at org.springframework.web.servlet.DispatcherServlet.processDispatchResult(DispatcherServlet.java:1142)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1081)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:963)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1006)
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:898)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:655)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:883)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:764)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:227)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:327)
+	at org.springframework.security.web.access.intercept.FilterSecurityInterceptor.invoke(FilterSecurityInterceptor.java:115)
+	at org.springframework.security.web.access.intercept.FilterSecurityInterceptor.doFilter(FilterSecurityInterceptor.java:81)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:336)
+	at org.springframework.security.web.access.ExceptionTranslationFilter.doFilter(ExceptionTranslationFilter.java:121)
+	at org.springframework.security.web.access.ExceptionTranslationFilter.doFilter(ExceptionTranslationFilter.java:115)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:336)
+	at org.springframework.security.web.session.SessionManagementFilter.doFilter(SessionManagementFilter.java:126)
+	at org.springframework.security.web.session.SessionManagementFilter.doFilter(SessionManagementFilter.java:81)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:336)
+	at org.springframework.security.web.authentication.AnonymousAuthenticationFilter.doFilter(AnonymousAuthenticationFilter.java:105)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:336)
+	at org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter.doFilter(SecurityContextHolderAwareRequestFilter.java:149)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:336)
+	at org.springframework.security.web.savedrequest.RequestCacheAwareFilter.doFilter(RequestCacheAwareFilter.java:63)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:336)
+	at org.springframework.security.web.authentication.AbstractAuthenticationProcessingFilter.doFilter(AbstractAuthenticationProcessingFilter.java:218)
+	at org.springframework.security.web.authentication.AbstractAuthenticationProcessingFilter.doFilter(AbstractAuthenticationProcessingFilter.java:212)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:336)
+	at org.springframework.security.web.authentication.logout.LogoutFilter.doFilter(LogoutFilter.java:103)
+	at org.springframework.security.web.authentication.logout.LogoutFilter.doFilter(LogoutFilter.java:89)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:336)
+	at org.springframework.security.web.csrf.CsrfFilter.doFilterInternal(CsrfFilter.java:117)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:336)
+	at org.springframework.security.web.header.HeaderWriterFilter.doHeadersAfter(HeaderWriterFilter.java:90)
+	at org.springframework.security.web.header.HeaderWriterFilter.doFilterInternal(HeaderWriterFilter.java:75)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:336)
+	at org.springframework.security.web.context.SecurityContextPersistenceFilter.doFilter(SecurityContextPersistenceFilter.java:110)
+	at org.springframework.security.web.context.SecurityContextPersistenceFilter.doFilter(SecurityContextPersistenceFilter.java:80)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:336)
+	at org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter.doFilterInternal(WebAsyncManagerIntegrationFilter.java:55)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:336)
+	at org.springframework.security.web.FilterChainProxy.doFilterInternal(FilterChainProxy.java:211)
+	at org.springframework.security.web.FilterChainProxy.doFilter(FilterChainProxy.java:183)
+	at org.springframework.web.filter.DelegatingFilterProxy.invokeDelegate(DelegatingFilterProxy.java:358)
+	at org.springframework.web.filter.DelegatingFilterProxy.doFilter(DelegatingFilterProxy.java:271)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:197)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:97)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:542)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:135)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:78)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:357)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:382)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:893)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1726)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.base/java.lang.Thread.run(Thread.java:832)
+2021-11-03 12:58:21 [http-nio-8080-exec-3]  INFO u.l.l.p.service.PeriodicalsService - Get all periodicals items
+2021-11-03 12:58:23 [http-nio-8080-exec-5] ERROR o.a.c.c.C.[.[localhost].[/].[jsp] - Servlet.service() for servlet [jsp] threw exception
+org.apache.jasper.JasperException: /jsp/createPeriodical.jsp (line: [7], column: [1]) Page directive: illegal to have multiple occurrences of 'contentType' with different values (old: [text/html; charset=UTF-8], new: [text/html; charset=ISO-8859-1])
+	at org.apache.jasper.compiler.DefaultErrorHandler.jspError(DefaultErrorHandler.java:41)
+	at org.apache.jasper.compiler.ErrorDispatcher.dispatch(ErrorDispatcher.java:292)
+	at org.apache.jasper.compiler.ErrorDispatcher.jspError(ErrorDispatcher.java:115)
+	at org.apache.jasper.compiler.Validator$DirectiveVisitor.visit(Validator.java:139)
+	at org.apache.jasper.compiler.Node$PageDirective.accept(Node.java:580)
+	at org.apache.jasper.compiler.Node$Nodes.visit(Node.java:2385)
+	at org.apache.jasper.compiler.Node$Visitor.visitBody(Node.java:2437)
+	at org.apache.jasper.compiler.Node$Visitor.visit(Node.java:2443)
+	at org.apache.jasper.compiler.Node$Root.accept(Node.java:471)
+	at org.apache.jasper.compiler.Node$Nodes.visit(Node.java:2385)
+	at org.apache.jasper.compiler.Validator.validateDirectives(Validator.java:1829)
+	at org.apache.jasper.compiler.Compiler.generateJava(Compiler.java:203)
+	at org.apache.jasper.compiler.Compiler.compile(Compiler.java:391)
+	at org.apache.jasper.compiler.Compiler.compile(Compiler.java:367)
+	at org.apache.jasper.compiler.Compiler.compile(Compiler.java:351)
+	at org.apache.jasper.JspCompilationContext.compile(JspCompilationContext.java:605)
+	at org.apache.jasper.servlet.JspServletWrapper.service(JspServletWrapper.java:399)
+	at org.apache.jasper.servlet.JspServlet.serviceJspFile(JspServlet.java:379)
+	at org.apache.jasper.servlet.JspServlet.service(JspServlet.java:327)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:764)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:227)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:113)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:113)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:113)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.apache.catalina.core.ApplicationDispatcher.invoke(ApplicationDispatcher.java:711)
+	at org.apache.catalina.core.ApplicationDispatcher.processRequest(ApplicationDispatcher.java:459)
+	at org.apache.catalina.core.ApplicationDispatcher.doForward(ApplicationDispatcher.java:385)
+	at org.apache.catalina.core.ApplicationDispatcher.forward(ApplicationDispatcher.java:313)
+	at org.springframework.security.web.header.HeaderWriterFilter$HeaderWriterRequestDispatcher.forward(HeaderWriterFilter.java:171)
+	at org.springframework.web.servlet.view.InternalResourceView.renderMergedOutputModel(InternalResourceView.java:171)
+	at org.springframework.web.servlet.view.AbstractView.render(AbstractView.java:316)
+	at org.springframework.web.servlet.DispatcherServlet.render(DispatcherServlet.java:1397)
+	at org.springframework.web.servlet.DispatcherServlet.processDispatchResult(DispatcherServlet.java:1142)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1081)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:963)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1006)
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:898)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:655)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:883)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:764)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:227)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:327)
+	at org.springframework.security.web.access.intercept.FilterSecurityInterceptor.invoke(FilterSecurityInterceptor.java:115)
+	at org.springframework.security.web.access.intercept.FilterSecurityInterceptor.doFilter(FilterSecurityInterceptor.java:81)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:336)
+	at org.springframework.security.web.access.ExceptionTranslationFilter.doFilter(ExceptionTranslationFilter.java:121)
+	at org.springframework.security.web.access.ExceptionTranslationFilter.doFilter(ExceptionTranslationFilter.java:115)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:336)
+	at org.springframework.security.web.session.SessionManagementFilter.doFilter(SessionManagementFilter.java:126)
+	at org.springframework.security.web.session.SessionManagementFilter.doFilter(SessionManagementFilter.java:81)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:336)
+	at org.springframework.security.web.authentication.AnonymousAuthenticationFilter.doFilter(AnonymousAuthenticationFilter.java:105)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:336)
+	at org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter.doFilter(SecurityContextHolderAwareRequestFilter.java:149)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:336)
+	at org.springframework.security.web.savedrequest.RequestCacheAwareFilter.doFilter(RequestCacheAwareFilter.java:63)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:336)
+	at org.springframework.security.web.authentication.AbstractAuthenticationProcessingFilter.doFilter(AbstractAuthenticationProcessingFilter.java:218)
+	at org.springframework.security.web.authentication.AbstractAuthenticationProcessingFilter.doFilter(AbstractAuthenticationProcessingFilter.java:212)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:336)
+	at org.springframework.security.web.authentication.logout.LogoutFilter.doFilter(LogoutFilter.java:103)
+	at org.springframework.security.web.authentication.logout.LogoutFilter.doFilter(LogoutFilter.java:89)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:336)
+	at org.springframework.security.web.csrf.CsrfFilter.doFilterInternal(CsrfFilter.java:117)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:336)
+	at org.springframework.security.web.header.HeaderWriterFilter.doHeadersAfter(HeaderWriterFilter.java:90)
+	at org.springframework.security.web.header.HeaderWriterFilter.doFilterInternal(HeaderWriterFilter.java:75)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:336)
+	at org.springframework.security.web.context.SecurityContextPersistenceFilter.doFilter(SecurityContextPersistenceFilter.java:110)
+	at org.springframework.security.web.context.SecurityContextPersistenceFilter.doFilter(SecurityContextPersistenceFilter.java:80)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:336)
+	at org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter.doFilterInternal(WebAsyncManagerIntegrationFilter.java:55)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:336)
+	at org.springframework.security.web.FilterChainProxy.doFilterInternal(FilterChainProxy.java:211)
+	at org.springframework.security.web.FilterChainProxy.doFilter(FilterChainProxy.java:183)
+	at org.springframework.web.filter.DelegatingFilterProxy.invokeDelegate(DelegatingFilterProxy.java:358)
+	at org.springframework.web.filter.DelegatingFilterProxy.doFilter(DelegatingFilterProxy.java:271)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:197)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:97)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:542)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:135)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:78)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:357)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:382)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:893)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1726)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.base/java.lang.Thread.run(Thread.java:832)
+2021-11-03 12:58:23 [http-nio-8080-exec-5] ERROR o.a.c.c.C.[.[.[.[dispatcherServlet] - Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [/jsp/createPeriodical.jsp (line: [7], column: [1]) Page directive: illegal to have multiple occurrences of 'contentType' with different values (old: [text/html; charset=UTF-8], new: [text/html; charset=ISO-8859-1])] with root cause
+org.apache.jasper.JasperException: /jsp/createPeriodical.jsp (line: [7], column: [1]) Page directive: illegal to have multiple occurrences of 'contentType' with different values (old: [text/html; charset=UTF-8], new: [text/html; charset=ISO-8859-1])
+	at org.apache.jasper.compiler.DefaultErrorHandler.jspError(DefaultErrorHandler.java:41)
+	at org.apache.jasper.compiler.ErrorDispatcher.dispatch(ErrorDispatcher.java:292)
+	at org.apache.jasper.compiler.ErrorDispatcher.jspError(ErrorDispatcher.java:115)
+	at org.apache.jasper.compiler.Validator$DirectiveVisitor.visit(Validator.java:139)
+	at org.apache.jasper.compiler.Node$PageDirective.accept(Node.java:580)
+	at org.apache.jasper.compiler.Node$Nodes.visit(Node.java:2385)
+	at org.apache.jasper.compiler.Node$Visitor.visitBody(Node.java:2437)
+	at org.apache.jasper.compiler.Node$Visitor.visit(Node.java:2443)
+	at org.apache.jasper.compiler.Node$Root.accept(Node.java:471)
+	at org.apache.jasper.compiler.Node$Nodes.visit(Node.java:2385)
+	at org.apache.jasper.compiler.Validator.validateDirectives(Validator.java:1829)
+	at org.apache.jasper.compiler.Compiler.generateJava(Compiler.java:203)
+	at org.apache.jasper.compiler.Compiler.compile(Compiler.java:391)
+	at org.apache.jasper.compiler.Compiler.compile(Compiler.java:367)
+	at org.apache.jasper.compiler.Compiler.compile(Compiler.java:351)
+	at org.apache.jasper.JspCompilationContext.compile(JspCompilationContext.java:605)
+	at org.apache.jasper.servlet.JspServletWrapper.service(JspServletWrapper.java:399)
+	at org.apache.jasper.servlet.JspServlet.serviceJspFile(JspServlet.java:379)
+	at org.apache.jasper.servlet.JspServlet.service(JspServlet.java:327)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:764)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:227)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:113)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:113)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:113)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.apache.catalina.core.ApplicationDispatcher.invoke(ApplicationDispatcher.java:711)
+	at org.apache.catalina.core.ApplicationDispatcher.processRequest(ApplicationDispatcher.java:459)
+	at org.apache.catalina.core.ApplicationDispatcher.doForward(ApplicationDispatcher.java:385)
+	at org.apache.catalina.core.ApplicationDispatcher.forward(ApplicationDispatcher.java:313)
+	at org.springframework.security.web.header.HeaderWriterFilter$HeaderWriterRequestDispatcher.forward(HeaderWriterFilter.java:171)
+	at org.springframework.web.servlet.view.InternalResourceView.renderMergedOutputModel(InternalResourceView.java:171)
+	at org.springframework.web.servlet.view.AbstractView.render(AbstractView.java:316)
+	at org.springframework.web.servlet.DispatcherServlet.render(DispatcherServlet.java:1397)
+	at org.springframework.web.servlet.DispatcherServlet.processDispatchResult(DispatcherServlet.java:1142)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1081)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:963)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1006)
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:898)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:655)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:883)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:764)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:227)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:327)
+	at org.springframework.security.web.access.intercept.FilterSecurityInterceptor.invoke(FilterSecurityInterceptor.java:115)
+	at org.springframework.security.web.access.intercept.FilterSecurityInterceptor.doFilter(FilterSecurityInterceptor.java:81)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:336)
+	at org.springframework.security.web.access.ExceptionTranslationFilter.doFilter(ExceptionTranslationFilter.java:121)
+	at org.springframework.security.web.access.ExceptionTranslationFilter.doFilter(ExceptionTranslationFilter.java:115)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:336)
+	at org.springframework.security.web.session.SessionManagementFilter.doFilter(SessionManagementFilter.java:126)
+	at org.springframework.security.web.session.SessionManagementFilter.doFilter(SessionManagementFilter.java:81)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:336)
+	at org.springframework.security.web.authentication.AnonymousAuthenticationFilter.doFilter(AnonymousAuthenticationFilter.java:105)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:336)
+	at org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter.doFilter(SecurityContextHolderAwareRequestFilter.java:149)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:336)
+	at org.springframework.security.web.savedrequest.RequestCacheAwareFilter.doFilter(RequestCacheAwareFilter.java:63)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:336)
+	at org.springframework.security.web.authentication.AbstractAuthenticationProcessingFilter.doFilter(AbstractAuthenticationProcessingFilter.java:218)
+	at org.springframework.security.web.authentication.AbstractAuthenticationProcessingFilter.doFilter(AbstractAuthenticationProcessingFilter.java:212)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:336)
+	at org.springframework.security.web.authentication.logout.LogoutFilter.doFilter(LogoutFilter.java:103)
+	at org.springframework.security.web.authentication.logout.LogoutFilter.doFilter(LogoutFilter.java:89)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:336)
+	at org.springframework.security.web.csrf.CsrfFilter.doFilterInternal(CsrfFilter.java:117)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:336)
+	at org.springframework.security.web.header.HeaderWriterFilter.doHeadersAfter(HeaderWriterFilter.java:90)
+	at org.springframework.security.web.header.HeaderWriterFilter.doFilterInternal(HeaderWriterFilter.java:75)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:336)
+	at org.springframework.security.web.context.SecurityContextPersistenceFilter.doFilter(SecurityContextPersistenceFilter.java:110)
+	at org.springframework.security.web.context.SecurityContextPersistenceFilter.doFilter(SecurityContextPersistenceFilter.java:80)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:336)
+	at org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter.doFilterInternal(WebAsyncManagerIntegrationFilter.java:55)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:336)
+	at org.springframework.security.web.FilterChainProxy.doFilterInternal(FilterChainProxy.java:211)
+	at org.springframework.security.web.FilterChainProxy.doFilter(FilterChainProxy.java:183)
+	at org.springframework.web.filter.DelegatingFilterProxy.invokeDelegate(DelegatingFilterProxy.java:358)
+	at org.springframework.web.filter.DelegatingFilterProxy.doFilter(DelegatingFilterProxy.java:271)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:197)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:97)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:542)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:135)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:78)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:357)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:382)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:893)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1726)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.base/java.lang.Thread.run(Thread.java:832)
+2021-11-03 12:58:30 [http-nio-8080-exec-1]  INFO u.l.l.p.service.PeriodicalsService - Get all periodicals items
+2021-11-03 12:58:36 [http-nio-8080-exec-7] ERROR o.a.c.c.C.[.[localhost].[/].[jsp] - Servlet.service() for servlet [jsp] threw exception
+org.apache.jasper.JasperException: /jsp/createPeriodical.jsp (line: [7], column: [1]) Page directive: illegal to have multiple occurrences of 'contentType' with different values (old: [text/html; charset=UTF-8], new: [text/html; charset=ISO-8859-1])
+	at org.apache.jasper.compiler.DefaultErrorHandler.jspError(DefaultErrorHandler.java:41)
+	at org.apache.jasper.compiler.ErrorDispatcher.dispatch(ErrorDispatcher.java:292)
+	at org.apache.jasper.compiler.ErrorDispatcher.jspError(ErrorDispatcher.java:115)
+	at org.apache.jasper.compiler.Validator$DirectiveVisitor.visit(Validator.java:139)
+	at org.apache.jasper.compiler.Node$PageDirective.accept(Node.java:580)
+	at org.apache.jasper.compiler.Node$Nodes.visit(Node.java:2385)
+	at org.apache.jasper.compiler.Node$Visitor.visitBody(Node.java:2437)
+	at org.apache.jasper.compiler.Node$Visitor.visit(Node.java:2443)
+	at org.apache.jasper.compiler.Node$Root.accept(Node.java:471)
+	at org.apache.jasper.compiler.Node$Nodes.visit(Node.java:2385)
+	at org.apache.jasper.compiler.Validator.validateDirectives(Validator.java:1829)
+	at org.apache.jasper.compiler.Compiler.generateJava(Compiler.java:203)
+	at org.apache.jasper.compiler.Compiler.compile(Compiler.java:391)
+	at org.apache.jasper.compiler.Compiler.compile(Compiler.java:367)
+	at org.apache.jasper.compiler.Compiler.compile(Compiler.java:351)
+	at org.apache.jasper.JspCompilationContext.compile(JspCompilationContext.java:605)
+	at org.apache.jasper.servlet.JspServletWrapper.service(JspServletWrapper.java:399)
+	at org.apache.jasper.servlet.JspServlet.serviceJspFile(JspServlet.java:379)
+	at org.apache.jasper.servlet.JspServlet.service(JspServlet.java:327)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:764)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:227)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:113)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:113)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:113)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.apache.catalina.core.ApplicationDispatcher.invoke(ApplicationDispatcher.java:711)
+	at org.apache.catalina.core.ApplicationDispatcher.processRequest(ApplicationDispatcher.java:459)
+	at org.apache.catalina.core.ApplicationDispatcher.doForward(ApplicationDispatcher.java:385)
+	at org.apache.catalina.core.ApplicationDispatcher.forward(ApplicationDispatcher.java:313)
+	at org.springframework.security.web.header.HeaderWriterFilter$HeaderWriterRequestDispatcher.forward(HeaderWriterFilter.java:171)
+	at org.springframework.web.servlet.view.InternalResourceView.renderMergedOutputModel(InternalResourceView.java:171)
+	at org.springframework.web.servlet.view.AbstractView.render(AbstractView.java:316)
+	at org.springframework.web.servlet.DispatcherServlet.render(DispatcherServlet.java:1397)
+	at org.springframework.web.servlet.DispatcherServlet.processDispatchResult(DispatcherServlet.java:1142)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1081)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:963)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1006)
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:898)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:655)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:883)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:764)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:227)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:327)
+	at org.springframework.security.web.access.intercept.FilterSecurityInterceptor.invoke(FilterSecurityInterceptor.java:115)
+	at org.springframework.security.web.access.intercept.FilterSecurityInterceptor.doFilter(FilterSecurityInterceptor.java:81)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:336)
+	at org.springframework.security.web.access.ExceptionTranslationFilter.doFilter(ExceptionTranslationFilter.java:121)
+	at org.springframework.security.web.access.ExceptionTranslationFilter.doFilter(ExceptionTranslationFilter.java:115)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:336)
+	at org.springframework.security.web.session.SessionManagementFilter.doFilter(SessionManagementFilter.java:126)
+	at org.springframework.security.web.session.SessionManagementFilter.doFilter(SessionManagementFilter.java:81)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:336)
+	at org.springframework.security.web.authentication.AnonymousAuthenticationFilter.doFilter(AnonymousAuthenticationFilter.java:105)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:336)
+	at org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter.doFilter(SecurityContextHolderAwareRequestFilter.java:149)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:336)
+	at org.springframework.security.web.savedrequest.RequestCacheAwareFilter.doFilter(RequestCacheAwareFilter.java:63)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:336)
+	at org.springframework.security.web.authentication.AbstractAuthenticationProcessingFilter.doFilter(AbstractAuthenticationProcessingFilter.java:218)
+	at org.springframework.security.web.authentication.AbstractAuthenticationProcessingFilter.doFilter(AbstractAuthenticationProcessingFilter.java:212)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:336)
+	at org.springframework.security.web.authentication.logout.LogoutFilter.doFilter(LogoutFilter.java:103)
+	at org.springframework.security.web.authentication.logout.LogoutFilter.doFilter(LogoutFilter.java:89)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:336)
+	at org.springframework.security.web.csrf.CsrfFilter.doFilterInternal(CsrfFilter.java:117)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:336)
+	at org.springframework.security.web.header.HeaderWriterFilter.doHeadersAfter(HeaderWriterFilter.java:90)
+	at org.springframework.security.web.header.HeaderWriterFilter.doFilterInternal(HeaderWriterFilter.java:75)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:336)
+	at org.springframework.security.web.context.SecurityContextPersistenceFilter.doFilter(SecurityContextPersistenceFilter.java:110)
+	at org.springframework.security.web.context.SecurityContextPersistenceFilter.doFilter(SecurityContextPersistenceFilter.java:80)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:336)
+	at org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter.doFilterInternal(WebAsyncManagerIntegrationFilter.java:55)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:336)
+	at org.springframework.security.web.FilterChainProxy.doFilterInternal(FilterChainProxy.java:211)
+	at org.springframework.security.web.FilterChainProxy.doFilter(FilterChainProxy.java:183)
+	at org.springframework.web.filter.DelegatingFilterProxy.invokeDelegate(DelegatingFilterProxy.java:358)
+	at org.springframework.web.filter.DelegatingFilterProxy.doFilter(DelegatingFilterProxy.java:271)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:197)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:97)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:542)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:135)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:78)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:357)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:382)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:893)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1726)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.base/java.lang.Thread.run(Thread.java:832)
+2021-11-03 12:58:36 [http-nio-8080-exec-7] ERROR o.a.c.c.C.[.[.[.[dispatcherServlet] - Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [/jsp/createPeriodical.jsp (line: [7], column: [1]) Page directive: illegal to have multiple occurrences of 'contentType' with different values (old: [text/html; charset=UTF-8], new: [text/html; charset=ISO-8859-1])] with root cause
+org.apache.jasper.JasperException: /jsp/createPeriodical.jsp (line: [7], column: [1]) Page directive: illegal to have multiple occurrences of 'contentType' with different values (old: [text/html; charset=UTF-8], new: [text/html; charset=ISO-8859-1])
+	at org.apache.jasper.compiler.DefaultErrorHandler.jspError(DefaultErrorHandler.java:41)
+	at org.apache.jasper.compiler.ErrorDispatcher.dispatch(ErrorDispatcher.java:292)
+	at org.apache.jasper.compiler.ErrorDispatcher.jspError(ErrorDispatcher.java:115)
+	at org.apache.jasper.compiler.Validator$DirectiveVisitor.visit(Validator.java:139)
+	at org.apache.jasper.compiler.Node$PageDirective.accept(Node.java:580)
+	at org.apache.jasper.compiler.Node$Nodes.visit(Node.java:2385)
+	at org.apache.jasper.compiler.Node$Visitor.visitBody(Node.java:2437)
+	at org.apache.jasper.compiler.Node$Visitor.visit(Node.java:2443)
+	at org.apache.jasper.compiler.Node$Root.accept(Node.java:471)
+	at org.apache.jasper.compiler.Node$Nodes.visit(Node.java:2385)
+	at org.apache.jasper.compiler.Validator.validateDirectives(Validator.java:1829)
+	at org.apache.jasper.compiler.Compiler.generateJava(Compiler.java:203)
+	at org.apache.jasper.compiler.Compiler.compile(Compiler.java:391)
+	at org.apache.jasper.compiler.Compiler.compile(Compiler.java:367)
+	at org.apache.jasper.compiler.Compiler.compile(Compiler.java:351)
+	at org.apache.jasper.JspCompilationContext.compile(JspCompilationContext.java:605)
+	at org.apache.jasper.servlet.JspServletWrapper.service(JspServletWrapper.java:399)
+	at org.apache.jasper.servlet.JspServlet.serviceJspFile(JspServlet.java:379)
+	at org.apache.jasper.servlet.JspServlet.service(JspServlet.java:327)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:764)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:227)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:113)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:113)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:113)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.apache.catalina.core.ApplicationDispatcher.invoke(ApplicationDispatcher.java:711)
+	at org.apache.catalina.core.ApplicationDispatcher.processRequest(ApplicationDispatcher.java:459)
+	at org.apache.catalina.core.ApplicationDispatcher.doForward(ApplicationDispatcher.java:385)
+	at org.apache.catalina.core.ApplicationDispatcher.forward(ApplicationDispatcher.java:313)
+	at org.springframework.security.web.header.HeaderWriterFilter$HeaderWriterRequestDispatcher.forward(HeaderWriterFilter.java:171)
+	at org.springframework.web.servlet.view.InternalResourceView.renderMergedOutputModel(InternalResourceView.java:171)
+	at org.springframework.web.servlet.view.AbstractView.render(AbstractView.java:316)
+	at org.springframework.web.servlet.DispatcherServlet.render(DispatcherServlet.java:1397)
+	at org.springframework.web.servlet.DispatcherServlet.processDispatchResult(DispatcherServlet.java:1142)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1081)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:963)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1006)
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:898)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:655)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:883)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:764)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:227)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:327)
+	at org.springframework.security.web.access.intercept.FilterSecurityInterceptor.invoke(FilterSecurityInterceptor.java:115)
+	at org.springframework.security.web.access.intercept.FilterSecurityInterceptor.doFilter(FilterSecurityInterceptor.java:81)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:336)
+	at org.springframework.security.web.access.ExceptionTranslationFilter.doFilter(ExceptionTranslationFilter.java:121)
+	at org.springframework.security.web.access.ExceptionTranslationFilter.doFilter(ExceptionTranslationFilter.java:115)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:336)
+	at org.springframework.security.web.session.SessionManagementFilter.doFilter(SessionManagementFilter.java:126)
+	at org.springframework.security.web.session.SessionManagementFilter.doFilter(SessionManagementFilter.java:81)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:336)
+	at org.springframework.security.web.authentication.AnonymousAuthenticationFilter.doFilter(AnonymousAuthenticationFilter.java:105)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:336)
+	at org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter.doFilter(SecurityContextHolderAwareRequestFilter.java:149)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:336)
+	at org.springframework.security.web.savedrequest.RequestCacheAwareFilter.doFilter(RequestCacheAwareFilter.java:63)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:336)
+	at org.springframework.security.web.authentication.AbstractAuthenticationProcessingFilter.doFilter(AbstractAuthenticationProcessingFilter.java:218)
+	at org.springframework.security.web.authentication.AbstractAuthenticationProcessingFilter.doFilter(AbstractAuthenticationProcessingFilter.java:212)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:336)
+	at org.springframework.security.web.authentication.logout.LogoutFilter.doFilter(LogoutFilter.java:103)
+	at org.springframework.security.web.authentication.logout.LogoutFilter.doFilter(LogoutFilter.java:89)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:336)
+	at org.springframework.security.web.csrf.CsrfFilter.doFilterInternal(CsrfFilter.java:117)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:336)
+	at org.springframework.security.web.header.HeaderWriterFilter.doHeadersAfter(HeaderWriterFilter.java:90)
+	at org.springframework.security.web.header.HeaderWriterFilter.doFilterInternal(HeaderWriterFilter.java:75)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:336)
+	at org.springframework.security.web.context.SecurityContextPersistenceFilter.doFilter(SecurityContextPersistenceFilter.java:110)
+	at org.springframework.security.web.context.SecurityContextPersistenceFilter.doFilter(SecurityContextPersistenceFilter.java:80)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:336)
+	at org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter.doFilterInternal(WebAsyncManagerIntegrationFilter.java:55)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:336)
+	at org.springframework.security.web.FilterChainProxy.doFilterInternal(FilterChainProxy.java:211)
+	at org.springframework.security.web.FilterChainProxy.doFilter(FilterChainProxy.java:183)
+	at org.springframework.web.filter.DelegatingFilterProxy.invokeDelegate(DelegatingFilterProxy.java:358)
+	at org.springframework.web.filter.DelegatingFilterProxy.doFilter(DelegatingFilterProxy.java:271)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:197)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:97)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:542)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:135)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:78)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:357)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:382)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:893)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1726)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.base/java.lang.Thread.run(Thread.java:832)
+2021-11-03 12:58:42 [http-nio-8080-exec-8]  INFO u.l.l.p.service.PeriodicalsService - Get all periodicals items
+2021-11-03 12:58:44 [http-nio-8080-exec-3] ERROR o.a.c.c.C.[.[localhost].[/].[jsp] - Servlet.service() for servlet [jsp] threw exception
+org.apache.jasper.JasperException: /jsp/createPeriodical.jsp (line: [7], column: [1]) Page directive: illegal to have multiple occurrences of 'contentType' with different values (old: [text/html; charset=UTF-8], new: [text/html; charset=ISO-8859-1])
+	at org.apache.jasper.compiler.DefaultErrorHandler.jspError(DefaultErrorHandler.java:41)
+	at org.apache.jasper.compiler.ErrorDispatcher.dispatch(ErrorDispatcher.java:292)
+	at org.apache.jasper.compiler.ErrorDispatcher.jspError(ErrorDispatcher.java:115)
+	at org.apache.jasper.compiler.Validator$DirectiveVisitor.visit(Validator.java:139)
+	at org.apache.jasper.compiler.Node$PageDirective.accept(Node.java:580)
+	at org.apache.jasper.compiler.Node$Nodes.visit(Node.java:2385)
+	at org.apache.jasper.compiler.Node$Visitor.visitBody(Node.java:2437)
+	at org.apache.jasper.compiler.Node$Visitor.visit(Node.java:2443)
+	at org.apache.jasper.compiler.Node$Root.accept(Node.java:471)
+	at org.apache.jasper.compiler.Node$Nodes.visit(Node.java:2385)
+	at org.apache.jasper.compiler.Validator.validateDirectives(Validator.java:1829)
+	at org.apache.jasper.compiler.Compiler.generateJava(Compiler.java:203)
+	at org.apache.jasper.compiler.Compiler.compile(Compiler.java:391)
+	at org.apache.jasper.compiler.Compiler.compile(Compiler.java:367)
+	at org.apache.jasper.compiler.Compiler.compile(Compiler.java:351)
+	at org.apache.jasper.JspCompilationContext.compile(JspCompilationContext.java:605)
+	at org.apache.jasper.servlet.JspServletWrapper.service(JspServletWrapper.java:399)
+	at org.apache.jasper.servlet.JspServlet.serviceJspFile(JspServlet.java:379)
+	at org.apache.jasper.servlet.JspServlet.service(JspServlet.java:327)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:764)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:227)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:113)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:113)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:113)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.apache.catalina.core.ApplicationDispatcher.invoke(ApplicationDispatcher.java:711)
+	at org.apache.catalina.core.ApplicationDispatcher.processRequest(ApplicationDispatcher.java:459)
+	at org.apache.catalina.core.ApplicationDispatcher.doForward(ApplicationDispatcher.java:385)
+	at org.apache.catalina.core.ApplicationDispatcher.forward(ApplicationDispatcher.java:313)
+	at org.springframework.security.web.header.HeaderWriterFilter$HeaderWriterRequestDispatcher.forward(HeaderWriterFilter.java:171)
+	at org.springframework.web.servlet.view.InternalResourceView.renderMergedOutputModel(InternalResourceView.java:171)
+	at org.springframework.web.servlet.view.AbstractView.render(AbstractView.java:316)
+	at org.springframework.web.servlet.DispatcherServlet.render(DispatcherServlet.java:1397)
+	at org.springframework.web.servlet.DispatcherServlet.processDispatchResult(DispatcherServlet.java:1142)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1081)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:963)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1006)
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:898)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:655)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:883)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:764)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:227)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:327)
+	at org.springframework.security.web.access.intercept.FilterSecurityInterceptor.invoke(FilterSecurityInterceptor.java:115)
+	at org.springframework.security.web.access.intercept.FilterSecurityInterceptor.doFilter(FilterSecurityInterceptor.java:81)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:336)
+	at org.springframework.security.web.access.ExceptionTranslationFilter.doFilter(ExceptionTranslationFilter.java:121)
+	at org.springframework.security.web.access.ExceptionTranslationFilter.doFilter(ExceptionTranslationFilter.java:115)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:336)
+	at org.springframework.security.web.session.SessionManagementFilter.doFilter(SessionManagementFilter.java:126)
+	at org.springframework.security.web.session.SessionManagementFilter.doFilter(SessionManagementFilter.java:81)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:336)
+	at org.springframework.security.web.authentication.AnonymousAuthenticationFilter.doFilter(AnonymousAuthenticationFilter.java:105)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:336)
+	at org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter.doFilter(SecurityContextHolderAwareRequestFilter.java:149)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:336)
+	at org.springframework.security.web.savedrequest.RequestCacheAwareFilter.doFilter(RequestCacheAwareFilter.java:63)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:336)
+	at org.springframework.security.web.authentication.AbstractAuthenticationProcessingFilter.doFilter(AbstractAuthenticationProcessingFilter.java:218)
+	at org.springframework.security.web.authentication.AbstractAuthenticationProcessingFilter.doFilter(AbstractAuthenticationProcessingFilter.java:212)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:336)
+	at org.springframework.security.web.authentication.logout.LogoutFilter.doFilter(LogoutFilter.java:103)
+	at org.springframework.security.web.authentication.logout.LogoutFilter.doFilter(LogoutFilter.java:89)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:336)
+	at org.springframework.security.web.csrf.CsrfFilter.doFilterInternal(CsrfFilter.java:117)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:336)
+	at org.springframework.security.web.header.HeaderWriterFilter.doHeadersAfter(HeaderWriterFilter.java:90)
+	at org.springframework.security.web.header.HeaderWriterFilter.doFilterInternal(HeaderWriterFilter.java:75)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:336)
+	at org.springframework.security.web.context.SecurityContextPersistenceFilter.doFilter(SecurityContextPersistenceFilter.java:110)
+	at org.springframework.security.web.context.SecurityContextPersistenceFilter.doFilter(SecurityContextPersistenceFilter.java:80)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:336)
+	at org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter.doFilterInternal(WebAsyncManagerIntegrationFilter.java:55)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:336)
+	at org.springframework.security.web.FilterChainProxy.doFilterInternal(FilterChainProxy.java:211)
+	at org.springframework.security.web.FilterChainProxy.doFilter(FilterChainProxy.java:183)
+	at org.springframework.web.filter.DelegatingFilterProxy.invokeDelegate(DelegatingFilterProxy.java:358)
+	at org.springframework.web.filter.DelegatingFilterProxy.doFilter(DelegatingFilterProxy.java:271)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:197)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:97)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:542)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:135)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:78)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:357)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:382)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:893)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1726)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.base/java.lang.Thread.run(Thread.java:832)
+2021-11-03 12:58:44 [http-nio-8080-exec-3] ERROR o.a.c.c.C.[.[.[.[dispatcherServlet] - Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [/jsp/createPeriodical.jsp (line: [7], column: [1]) Page directive: illegal to have multiple occurrences of 'contentType' with different values (old: [text/html; charset=UTF-8], new: [text/html; charset=ISO-8859-1])] with root cause
+org.apache.jasper.JasperException: /jsp/createPeriodical.jsp (line: [7], column: [1]) Page directive: illegal to have multiple occurrences of 'contentType' with different values (old: [text/html; charset=UTF-8], new: [text/html; charset=ISO-8859-1])
+	at org.apache.jasper.compiler.DefaultErrorHandler.jspError(DefaultErrorHandler.java:41)
+	at org.apache.jasper.compiler.ErrorDispatcher.dispatch(ErrorDispatcher.java:292)
+	at org.apache.jasper.compiler.ErrorDispatcher.jspError(ErrorDispatcher.java:115)
+	at org.apache.jasper.compiler.Validator$DirectiveVisitor.visit(Validator.java:139)
+	at org.apache.jasper.compiler.Node$PageDirective.accept(Node.java:580)
+	at org.apache.jasper.compiler.Node$Nodes.visit(Node.java:2385)
+	at org.apache.jasper.compiler.Node$Visitor.visitBody(Node.java:2437)
+	at org.apache.jasper.compiler.Node$Visitor.visit(Node.java:2443)
+	at org.apache.jasper.compiler.Node$Root.accept(Node.java:471)
+	at org.apache.jasper.compiler.Node$Nodes.visit(Node.java:2385)
+	at org.apache.jasper.compiler.Validator.validateDirectives(Validator.java:1829)
+	at org.apache.jasper.compiler.Compiler.generateJava(Compiler.java:203)
+	at org.apache.jasper.compiler.Compiler.compile(Compiler.java:391)
+	at org.apache.jasper.compiler.Compiler.compile(Compiler.java:367)
+	at org.apache.jasper.compiler.Compiler.compile(Compiler.java:351)
+	at org.apache.jasper.JspCompilationContext.compile(JspCompilationContext.java:605)
+	at org.apache.jasper.servlet.JspServletWrapper.service(JspServletWrapper.java:399)
+	at org.apache.jasper.servlet.JspServlet.serviceJspFile(JspServlet.java:379)
+	at org.apache.jasper.servlet.JspServlet.service(JspServlet.java:327)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:764)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:227)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:113)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:113)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:113)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.apache.catalina.core.ApplicationDispatcher.invoke(ApplicationDispatcher.java:711)
+	at org.apache.catalina.core.ApplicationDispatcher.processRequest(ApplicationDispatcher.java:459)
+	at org.apache.catalina.core.ApplicationDispatcher.doForward(ApplicationDispatcher.java:385)
+	at org.apache.catalina.core.ApplicationDispatcher.forward(ApplicationDispatcher.java:313)
+	at org.springframework.security.web.header.HeaderWriterFilter$HeaderWriterRequestDispatcher.forward(HeaderWriterFilter.java:171)
+	at org.springframework.web.servlet.view.InternalResourceView.renderMergedOutputModel(InternalResourceView.java:171)
+	at org.springframework.web.servlet.view.AbstractView.render(AbstractView.java:316)
+	at org.springframework.web.servlet.DispatcherServlet.render(DispatcherServlet.java:1397)
+	at org.springframework.web.servlet.DispatcherServlet.processDispatchResult(DispatcherServlet.java:1142)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1081)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:963)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1006)
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:898)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:655)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:883)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:764)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:227)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:327)
+	at org.springframework.security.web.access.intercept.FilterSecurityInterceptor.invoke(FilterSecurityInterceptor.java:115)
+	at org.springframework.security.web.access.intercept.FilterSecurityInterceptor.doFilter(FilterSecurityInterceptor.java:81)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:336)
+	at org.springframework.security.web.access.ExceptionTranslationFilter.doFilter(ExceptionTranslationFilter.java:121)
+	at org.springframework.security.web.access.ExceptionTranslationFilter.doFilter(ExceptionTranslationFilter.java:115)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:336)
+	at org.springframework.security.web.session.SessionManagementFilter.doFilter(SessionManagementFilter.java:126)
+	at org.springframework.security.web.session.SessionManagementFilter.doFilter(SessionManagementFilter.java:81)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:336)
+	at org.springframework.security.web.authentication.AnonymousAuthenticationFilter.doFilter(AnonymousAuthenticationFilter.java:105)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:336)
+	at org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter.doFilter(SecurityContextHolderAwareRequestFilter.java:149)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:336)
+	at org.springframework.security.web.savedrequest.RequestCacheAwareFilter.doFilter(RequestCacheAwareFilter.java:63)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:336)
+	at org.springframework.security.web.authentication.AbstractAuthenticationProcessingFilter.doFilter(AbstractAuthenticationProcessingFilter.java:218)
+	at org.springframework.security.web.authentication.AbstractAuthenticationProcessingFilter.doFilter(AbstractAuthenticationProcessingFilter.java:212)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:336)
+	at org.springframework.security.web.authentication.logout.LogoutFilter.doFilter(LogoutFilter.java:103)
+	at org.springframework.security.web.authentication.logout.LogoutFilter.doFilter(LogoutFilter.java:89)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:336)
+	at org.springframework.security.web.csrf.CsrfFilter.doFilterInternal(CsrfFilter.java:117)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:336)
+	at org.springframework.security.web.header.HeaderWriterFilter.doHeadersAfter(HeaderWriterFilter.java:90)
+	at org.springframework.security.web.header.HeaderWriterFilter.doFilterInternal(HeaderWriterFilter.java:75)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:336)
+	at org.springframework.security.web.context.SecurityContextPersistenceFilter.doFilter(SecurityContextPersistenceFilter.java:110)
+	at org.springframework.security.web.context.SecurityContextPersistenceFilter.doFilter(SecurityContextPersistenceFilter.java:80)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:336)
+	at org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter.doFilterInternal(WebAsyncManagerIntegrationFilter.java:55)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:336)
+	at org.springframework.security.web.FilterChainProxy.doFilterInternal(FilterChainProxy.java:211)
+	at org.springframework.security.web.FilterChainProxy.doFilter(FilterChainProxy.java:183)
+	at org.springframework.web.filter.DelegatingFilterProxy.invokeDelegate(DelegatingFilterProxy.java:358)
+	at org.springframework.web.filter.DelegatingFilterProxy.doFilter(DelegatingFilterProxy.java:271)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:197)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:97)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:542)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:135)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:78)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:357)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:382)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:893)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1726)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.base/java.lang.Thread.run(Thread.java:832)
+2021-11-03 12:58:47 [http-nio-8080-exec-10]  INFO u.l.l.p.service.PeriodicalsService - Get all periodicals items
+2021-11-03 13:00:10 [main]  INFO u.l.l.p.PeriodicalsApplication - Starting PeriodicalsApplication using Java 15.0.1 on DESKTOP-EC73OSQ with PID 13448 (D:\Zenyk\Java\eclipse-workspace\JA-Project\periodicals\target\classes started by livch in D:\Zenyk\Java\eclipse-workspace\JA-Project\periodicals)
+2021-11-03 13:00:10 [main] DEBUG u.l.l.p.PeriodicalsApplication - Running with Spring Boot v2.5.4, Spring v5.3.9
+2021-11-03 13:00:10 [main]  INFO u.l.l.p.PeriodicalsApplication - No active profile set, falling back to default profiles: default
+2021-11-03 13:00:12 [main]  INFO o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2021-11-03 13:00:12 [main]  INFO o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 143 ms. Found 3 JPA repository interfaces.
+2021-11-03 13:00:13 [main]  INFO o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8080 (http)
+2021-11-03 13:00:13 [main]  INFO o.a.catalina.core.StandardService - Starting service [Tomcat]
+2021-11-03 13:00:13 [main]  INFO o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.52]
+2021-11-03 13:00:14 [main]  INFO org.apache.jasper.servlet.TldScanner - At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+2021-11-03 13:00:14 [main]  INFO o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2021-11-03 13:00:14 [main]  INFO o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 3887 ms
+2021-11-03 13:00:14 [main]  INFO o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+2021-11-03 13:00:14 [main]  INFO org.hibernate.Version - HHH000412: Hibernate ORM core version 5.4.32.Final
+2021-11-03 13:00:15 [main]  INFO o.h.annotations.common.Version - HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2021-11-03 13:00:15 [main]  INFO com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2021-11-03 13:00:16 [main]  INFO com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2021-11-03 13:00:16 [main]  INFO org.hibernate.dialect.Dialect - HHH000400: Using dialect: org.hibernate.dialect.MySQL8Dialect
+2021-11-03 13:00:17 [main]  INFO o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2021-11-03 13:00:17 [main]  INFO o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2021-11-03 13:00:17 [main]  WARN o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2021-11-03 13:00:19 [main]  INFO o.s.s.web.DefaultSecurityFilterChain - Will secure any request with [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@29b0c169, org.springframework.security.web.context.SecurityContextPersistenceFilter@20462820, org.springframework.security.web.header.HeaderWriterFilter@15c3585, org.springframework.security.web.csrf.CsrfFilter@7a78d2aa, org.springframework.security.web.authentication.logout.LogoutFilter@4880a9d, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@7df23848, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@384f0e32, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@13731ff4, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@4d1b4fa1, org.springframework.security.web.session.SessionManagementFilter@468646ea, org.springframework.security.web.access.ExceptionTranslationFilter@69fe8c75, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@87f1201]
+2021-11-03 13:00:19 [main]  INFO o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 8080 (http) with context path ''
+2021-11-03 13:00:19 [main]  INFO u.l.l.p.PeriodicalsApplication - Started PeriodicalsApplication in 10.253 seconds (JVM running for 11.276)
+2021-11-03 13:00:27 [http-nio-8080-exec-1]  INFO o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2021-11-03 13:00:49 [http-nio-8080-exec-8]  INFO u.l.l.p.service.PeriodicalsService - Get all periodicals items
+2021-11-03 13:01:33 [http-nio-8080-exec-10]  INFO u.l.l.p.service.PeriodicalsService - Get all periodicals items
+2021-11-03 13:01:45 [http-nio-8080-exec-1]  INFO u.l.l.p.service.PeriodicalsService - Get all periodicals items
+2021-11-03 13:03:12 [main]  INFO u.l.l.p.PeriodicalsApplication - Starting PeriodicalsApplication using Java 15.0.1 on DESKTOP-EC73OSQ with PID 4176 (D:\Zenyk\Java\eclipse-workspace\JA-Project\periodicals\target\classes started by livch in D:\Zenyk\Java\eclipse-workspace\JA-Project\periodicals)
+2021-11-03 13:03:12 [main] DEBUG u.l.l.p.PeriodicalsApplication - Running with Spring Boot v2.5.4, Spring v5.3.9
+2021-11-03 13:03:12 [main]  INFO u.l.l.p.PeriodicalsApplication - No active profile set, falling back to default profiles: default
+2021-11-03 13:03:14 [main]  INFO o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2021-11-03 13:03:14 [main]  INFO o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 115 ms. Found 3 JPA repository interfaces.
+2021-11-03 13:03:15 [main]  INFO o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8080 (http)
+2021-11-03 13:03:15 [main]  INFO o.a.catalina.core.StandardService - Starting service [Tomcat]
+2021-11-03 13:03:15 [main]  INFO o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.52]
+2021-11-03 13:03:16 [main]  INFO org.apache.jasper.servlet.TldScanner - At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+2021-11-03 13:03:16 [main]  INFO o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2021-11-03 13:03:16 [main]  INFO o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 3707 ms
+2021-11-03 13:03:16 [main]  INFO o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+2021-11-03 13:03:17 [main]  INFO org.hibernate.Version - HHH000412: Hibernate ORM core version 5.4.32.Final
+2021-11-03 13:03:17 [main]  INFO o.h.annotations.common.Version - HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2021-11-03 13:03:17 [main]  INFO com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2021-11-03 13:03:18 [main]  INFO com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2021-11-03 13:03:18 [main]  INFO org.hibernate.dialect.Dialect - HHH000400: Using dialect: org.hibernate.dialect.MySQL8Dialect
+2021-11-03 13:03:19 [main]  INFO o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2021-11-03 13:03:19 [main]  INFO o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2021-11-03 13:03:19 [main]  WARN o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2021-11-03 13:03:21 [main]  INFO o.s.s.web.DefaultSecurityFilterChain - Will secure any request with [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@68feca3a, org.springframework.security.web.context.SecurityContextPersistenceFilter@4803bf73, org.springframework.security.web.header.HeaderWriterFilter@46051269, org.springframework.security.web.csrf.CsrfFilter@7ea8224b, org.springframework.security.web.authentication.logout.LogoutFilter@5c0d3715, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@5f2ad3d5, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@1ce8084a, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@3331800f, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@ad585fb, org.springframework.security.web.session.SessionManagementFilter@5b5a89d1, org.springframework.security.web.access.ExceptionTranslationFilter@4e826fd4, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@78324e97]
+2021-11-03 13:03:21 [main]  INFO o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 8080 (http) with context path ''
+2021-11-03 13:03:21 [main]  INFO u.l.l.p.PeriodicalsApplication - Started PeriodicalsApplication in 10.034 seconds (JVM running for 11.154)
+2021-11-03 13:03:30 [http-nio-8080-exec-1]  INFO o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2021-11-03 13:04:14 [http-nio-8080-exec-5]  INFO u.l.l.p.service.PeriodicalsService - Create periodical item {}:Periodical [id=null, name=Mitsubishi, description=test, price=5.5]
+2021-11-03 13:04:15 [http-nio-8080-exec-5]  INFO u.l.l.p.service.PeriodicalsService - Get all periodicals items
+2021-11-03 13:04:23 [http-nio-8080-exec-7]  INFO u.l.l.p.service.PeriodicalsService - Get all periodicals items
+2021-11-03 13:04:29 [http-nio-8080-exec-10]  INFO u.l.l.p.service.PeriodicalsService - Get all periodicals items
+2021-11-03 13:04:35 [http-nio-8080-exec-7]  INFO u.l.l.p.service.BucketService - Get all buckets items
+2021-11-03 13:05:08 [main]  INFO u.l.l.p.PeriodicalsApplication - Starting PeriodicalsApplication using Java 15.0.1 on DESKTOP-EC73OSQ with PID 2308 (D:\Zenyk\Java\eclipse-workspace\JA-Project\periodicals\target\classes started by livch in D:\Zenyk\Java\eclipse-workspace\JA-Project\periodicals)
+2021-11-03 13:05:08 [main] DEBUG u.l.l.p.PeriodicalsApplication - Running with Spring Boot v2.5.4, Spring v5.3.9
+2021-11-03 13:05:08 [main]  INFO u.l.l.p.PeriodicalsApplication - No active profile set, falling back to default profiles: default
+2021-11-03 13:05:10 [main]  INFO o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2021-11-03 13:05:10 [main]  INFO o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 119 ms. Found 3 JPA repository interfaces.
+2021-11-03 13:05:11 [main]  INFO o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8080 (http)
+2021-11-03 13:05:11 [main]  INFO o.a.catalina.core.StandardService - Starting service [Tomcat]
+2021-11-03 13:05:11 [main]  INFO o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.52]
+2021-11-03 13:05:12 [main]  INFO org.apache.jasper.servlet.TldScanner - At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+2021-11-03 13:05:12 [main]  INFO o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2021-11-03 13:05:12 [main]  INFO o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 3819 ms
+2021-11-03 13:05:13 [main]  INFO o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+2021-11-03 13:05:13 [main]  INFO org.hibernate.Version - HHH000412: Hibernate ORM core version 5.4.32.Final
+2021-11-03 13:05:13 [main]  INFO o.h.annotations.common.Version - HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2021-11-03 13:05:13 [main]  INFO com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2021-11-03 13:05:14 [main]  INFO com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2021-11-03 13:05:14 [main]  INFO org.hibernate.dialect.Dialect - HHH000400: Using dialect: org.hibernate.dialect.MySQL8Dialect
+2021-11-03 13:05:15 [main]  INFO o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2021-11-03 13:05:15 [main]  INFO o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2021-11-03 13:05:16 [main]  WARN o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2021-11-03 13:05:17 [main]  INFO o.s.s.web.DefaultSecurityFilterChain - Will secure any request with [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@73417494, org.springframework.security.web.context.SecurityContextPersistenceFilter@4056cdb2, org.springframework.security.web.header.HeaderWriterFilter@633cad4d, org.springframework.security.web.csrf.CsrfFilter@29ae2517, org.springframework.security.web.authentication.logout.LogoutFilter@1e09c0b, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@34c07ecc, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@4c0ab04f, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@4803bf73, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@29b0c169, org.springframework.security.web.session.SessionManagementFilter@5b86f4cb, org.springframework.security.web.access.ExceptionTranslationFilter@11896124, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@21b2579d]
+2021-11-03 13:05:18 [main]  INFO o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 8080 (http) with context path ''
+2021-11-03 13:05:18 [main]  INFO u.l.l.p.PeriodicalsApplication - Started PeriodicalsApplication in 10.378 seconds (JVM running for 11.412)
+2021-11-03 13:05:21 [http-nio-8080-exec-1]  INFO o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2021-11-03 13:05:27 [http-nio-8080-exec-8]  INFO u.l.l.p.service.BucketService - Get all buckets items
+2021-11-03 13:05:35 [http-nio-8080-exec-4]  INFO u.l.l.p.service.PeriodicalsService - Get all periodicals items
+2021-11-03 13:05:37 [http-nio-8080-exec-9]  INFO u.l.l.p.service.PeriodicalsService - Get periodical item by id:37
+2021-11-03 13:05:37 [http-nio-8080-exec-9]  INFO u.l.l.p.service.UserService - Get user {} by email: user@gmail.com
+2021-11-03 13:05:37 [http-nio-8080-exec-9]  INFO u.l.l.p.service.BucketService - Create new bucket item {}: Bucket [id=null, user=User [id=4, email=user@gmail.com, firstName=user, lastName=user, role=ROLE_USER, password=$2a$10$D06LjYs9rUvzCRgHu7Ji5.zssv3h9L7d/edqKCqYnvOork1VZqdiG], periodical=Periodical [id=37, name=Mitsubishi, description=test, price=5.5], purchaseDate=Wed Nov 03 13:05:37 EET 2021]
+2021-11-03 13:05:38 [http-nio-8080-exec-9]  INFO u.l.l.p.service.BucketService - Get all buckets items
+2021-11-03 13:05:41 [http-nio-8080-exec-6]  INFO u.l.l.p.service.PeriodicalsService - Get all periodicals items
+2021-11-03 13:05:42 [http-nio-8080-exec-2]  INFO u.l.l.p.service.PeriodicalsService - Get periodical item by id:34
+2021-11-03 13:05:42 [http-nio-8080-exec-2]  INFO u.l.l.p.service.UserService - Get user {} by email: user@gmail.com
+2021-11-03 13:05:43 [http-nio-8080-exec-2]  INFO u.l.l.p.service.BucketService - Create new bucket item {}: Bucket [id=null, user=User [id=4, email=user@gmail.com, firstName=user, lastName=user, role=ROLE_USER, password=$2a$10$D06LjYs9rUvzCRgHu7Ji5.zssv3h9L7d/edqKCqYnvOork1VZqdiG], periodical=Periodical [id=34, name=petro, description=ttest, price=5.5], purchaseDate=Wed Nov 03 13:05:42 EET 2021]
+2021-11-03 13:05:43 [http-nio-8080-exec-2]  INFO u.l.l.p.service.BucketService - Get all buckets items
+2021-11-03 13:05:44 [http-nio-8080-exec-8]  INFO u.l.l.p.service.PeriodicalsService - Get all periodicals items
+2021-11-03 13:05:45 [http-nio-8080-exec-4]  INFO u.l.l.p.service.BucketService - Get all buckets items
+2021-11-03 13:06:24 [http-nio-8080-exec-7]  INFO u.l.l.p.service.PeriodicalsService - Get all periodicals items
+2021-11-03 13:10:29 [http-nio-8080-exec-9]  INFO u.l.l.p.service.PeriodicalsService - Get all periodicals items
+2021-11-03 13:14:53 [main]  INFO u.l.l.p.PeriodicalsApplication - Starting PeriodicalsApplication using Java 15.0.1 on DESKTOP-EC73OSQ with PID 860 (D:\Zenyk\Java\eclipse-workspace\JA-Project\periodicals\target\classes started by livch in D:\Zenyk\Java\eclipse-workspace\JA-Project\periodicals)
+2021-11-03 13:14:53 [main] DEBUG u.l.l.p.PeriodicalsApplication - Running with Spring Boot v2.5.4, Spring v5.3.9
+2021-11-03 13:14:53 [main]  INFO u.l.l.p.PeriodicalsApplication - No active profile set, falling back to default profiles: default
+2021-11-03 13:14:56 [main]  INFO o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2021-11-03 13:14:56 [main]  INFO o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 148 ms. Found 3 JPA repository interfaces.
+2021-11-03 13:14:58 [main]  INFO o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8080 (http)
+2021-11-03 13:14:58 [main]  INFO o.a.catalina.core.StandardService - Starting service [Tomcat]
+2021-11-03 13:14:58 [main]  INFO o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.52]
+2021-11-03 13:14:59 [main]  INFO org.apache.jasper.servlet.TldScanner - At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+2021-11-03 13:15:00 [main]  INFO o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2021-11-03 13:15:00 [main]  INFO o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 6061 ms
+2021-11-03 13:15:00 [main]  INFO o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+2021-11-03 13:15:00 [main]  INFO org.hibernate.Version - HHH000412: Hibernate ORM core version 5.4.32.Final
+2021-11-03 13:15:01 [main]  INFO o.h.annotations.common.Version - HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2021-11-03 13:15:01 [main]  INFO com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2021-11-03 13:15:02 [main]  INFO com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2021-11-03 13:15:02 [main]  INFO org.hibernate.dialect.Dialect - HHH000400: Using dialect: org.hibernate.dialect.MySQL8Dialect
+2021-11-03 13:15:04 [main]  INFO o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2021-11-03 13:15:04 [main]  INFO o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2021-11-03 13:15:04 [main]  WARN o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2021-11-03 13:15:06 [main]  INFO o.s.s.web.DefaultSecurityFilterChain - Will secure any request with [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@76980c75, org.springframework.security.web.context.SecurityContextPersistenceFilter@630e5010, org.springframework.security.web.header.HeaderWriterFilter@1ce8084a, org.springframework.security.web.csrf.CsrfFilter@78f35e39, org.springframework.security.web.authentication.logout.LogoutFilter@50b2ba2c, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@68feca3a, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@58835bba, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@1e09c0b, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@3696d12d, org.springframework.security.web.session.SessionManagementFilter@347f8029, org.springframework.security.web.access.ExceptionTranslationFilter@4803bf73, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@703eead0]
+2021-11-03 13:15:07 [main]  INFO o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 8080 (http) with context path ''
+2021-11-03 13:15:07 [main]  INFO u.l.l.p.PeriodicalsApplication - Started PeriodicalsApplication in 14.805 seconds (JVM running for 15.848)
+2021-11-03 13:15:18 [http-nio-8080-exec-1]  INFO o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2021-11-03 13:15:19 [http-nio-8080-exec-1]  WARN o.a.c.util.SessionIdGeneratorBase - Creation of SecureRandom instance for session ID generation using [SHA1PRNG] took [245] milliseconds.
+2021-11-03 13:15:40 [http-nio-8080-exec-8]  INFO u.l.l.p.service.PeriodicalsService - Get all periodicals items
