@@ -34,14 +34,14 @@
 	$(document).ready(function() {
 		var selItem = localStorage.getItem("locales");
 		$('#locales').val(selItem ? selItem : 'en');
-		$('#locales').change(function(){
+		$('#locales').change(function() {
 			var selectedOption = $('#locales').val();
-			if(selectedOption){
+			if (selectedOption) {
 				window.location.replace('?lang=' + selectedOption);
 				localStorage.setItem("locales", selectedOption);
 			}
 		});
-		
+
 	});
 </script>
 </head>
@@ -58,37 +58,43 @@
 			</div>
 
 			<form method="POST" action="${contextPath}/login" class="form-signin">
-				<h2 class="form-heading"><spring:message code="login.title" /></h2>
+				<h2 class="form-heading">
+					<spring:message code="login.title" />
+				</h2>
 
 				<div class="form-group ${error != null ? 'has-error' : ''}">
-					<span>${message}</span>
-					 <input name="email" type="text"
-						placeholder="<spring:message code="login.email" />" class="fadeIn second" autofocus
-						value="user@gmail.com" /> <input name="password" type="password"
-						placeholder="<spring:message code="login.password" />" class="fadeIn third " value="user" /> <span>${error}</span>
-					<input type="hidden" name="${_csrf.parameterName}"
-						value="${_csrf.token}" /> <input class="fadeIn fourth w3-teal"
-						type="submit" value="<spring:message code="login.logIn" />" />
+					<span>${message}</span> <input name="email" type="text"
+						placeholder="<spring:message code="login.email" />"
+						class="fadeIn second" autofocus value="user@gmail.com" /> <input
+						name="password" type="password"
+						placeholder="<spring:message code="login.password" />"
+						class="fadeIn third " value="user" /> <span>${error}</span> <input
+						type="hidden" name="${_csrf.parameterName}" value="${_csrf.token}" />
+					<input class="fadeIn fourth w3-teal" type="submit"
+						value="<spring:message code="login.logIn" />" />
 				</div>
 
 			</form>
 
 			<div>
 				<fieldset>
-					<label style= "color: black"> <spring:message code="login.choose_language" /> </label>
-					 <select
-						id="locales">
-							<option value="en"><spring:message code="login.english" /></option>
-							<option value="ua"><spring:message code="login.ukrainian" /></option>
+					<label style="color: black"> <spring:message
+							code="login.choose_language" />
+					</label> <select id="locales">
+						
+						<option value="en" selected="selected"><spring:message code="login.english" /></option>
+						<option value="ua"><spring:message code="login.ukrainian" /></option>
+
 					</select>
-					
+
 				</fieldset>
 			</div>
 
 
 			<!-- Remind Passowrd -->
 			<div id="formFooter" class="w3-teal">
-				<a class="underlineHover" href="${contextPath}/registration"><spring:message code="login.create_account" /></a>
+				<a class="underlineHover" href="${contextPath}/registration"><spring:message
+						code="login.create_account" /></a>
 			</div>
 
 		</div>
